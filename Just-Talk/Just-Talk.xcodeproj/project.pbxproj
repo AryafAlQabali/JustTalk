@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FE17B323AB17FB5DC474483 /* Pods_Just_Talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F2E4A8C9E152D12E05AB69 /* Pods_Just_Talk.framework */; };
+		F6821198276F2830001CBBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6821197276F2830001CBBC6 /* AppDelegate.swift */; };
+		F682119A276F2830001CBBC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6821199276F2830001CBBC6 /* SceneDelegate.swift */; };
+		F682119C276F2830001CBBC6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682119B276F2830001CBBC6 /* LoginVC.swift */; };
+		F682119F276F2830001CBBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F682119D276F2830001CBBC6 /* Main.storyboard */; };
+		F68211A1276F2830001CBBC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F68211A0276F2830001CBBC6 /* Assets.xcassets */; };
+		F68211A4276F2830001CBBC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F68211A2276F2830001CBBC6 /* LaunchScreen.storyboard */; };
+		F68211AE276F28EB001CBBC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F68211AD276F28EB001CBBC6 /* GoogleService-Info.plist */; };
+		F68211B1276F299E001CBBC6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F68211B0276F299E001CBBC6 /* FirebaseAnalytics */; };
+		F68211B3276F299E001CBBC6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F68211B2276F299E001CBBC6 /* FirebaseAuth */; };
+		F68211B5276F299E001CBBC6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F68211B4276F299E001CBBC6 /* FirebaseFirestore */; };
+		F68211B7276F299E001CBBC6 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = F68211B6276F299E001CBBC6 /* FirebaseFirestoreSwift-Beta */; };
+		F68211B9276F299E001CBBC6 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F68211B8276F299E001CBBC6 /* FirebaseMessaging */; };
+		F68211BB276F299E001CBBC6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F68211BA276F299E001CBBC6 /* FirebaseStorage */; };
+		F68211C0276F2C8B001CBBC6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F68211BF276F2C8B001CBBC6 /* RealmSwift */; };
+		F68211C3276F2DD4001CBBC6 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = F68211C2276F2DD4001CBBC6 /* MessageKit */; };
+		F68211C6276F2E10001CBBC6 /* InputBarAccessoryView in Frameworks */ = {isa = PBXBuildFile; productRef = F68211C5276F2E10001CBBC6 /* InputBarAccessoryView */; };
+		F68211CA27707AD8001CBBC6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211C927707AD8001CBBC6 /* User.swift */; };
+		F68211CC27707CA2001CBBC6 /* FCollectionReferenc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211CB27707CA2001CBBC6 /* FCollectionReferenc.swift */; };
+		F68211CE27708F49001CBBC6 /* FUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211CD27708F49001CBBC6 /* FUserListener.swift */; };
+		F68211D02770997A001CBBC6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211CF2770997A001CBBC6 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06F2E4A8C9E152D12E05AB69 /* Pods_Just_Talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Just_Talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		539C56AD4EFA40F9C30C2B26 /* Pods-Just-Talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just-Talk.release.xcconfig"; path = "Target Support Files/Pods-Just-Talk/Pods-Just-Talk.release.xcconfig"; sourceTree = "<group>"; };
+		C7ACBF7533956FF0BB21F631 /* Pods-Just-Talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just-Talk.debug.xcconfig"; path = "Target Support Files/Pods-Just-Talk/Pods-Just-Talk.debug.xcconfig"; sourceTree = "<group>"; };
+		F6821194276F2830001CBBC6 /* Just-Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just-Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6821197276F2830001CBBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6821199276F2830001CBBC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F682119B276F2830001CBBC6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F682119E276F2830001CBBC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F68211A0276F2830001CBBC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F68211A3276F2830001CBBC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F68211A5276F2830001CBBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68211AD276F28EB001CBBC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F68211C927707AD8001CBBC6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F68211CB27707CA2001CBBC6 /* FCollectionReferenc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReferenc.swift; sourceTree = "<group>"; };
+		F68211CD27708F49001CBBC6 /* FUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUserListener.swift; sourceTree = "<group>"; };
+		F68211CF2770997A001CBBC6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6821191276F2830001CBBC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68211C0276F2C8B001CBBC6 /* RealmSwift in Frameworks */,
+				F68211B1276F299E001CBBC6 /* FirebaseAnalytics in Frameworks */,
+				F68211C6276F2E10001CBBC6 /* InputBarAccessoryView in Frameworks */,
+				F68211B7276F299E001CBBC6 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				F68211B9276F299E001CBBC6 /* FirebaseMessaging in Frameworks */,
+				F68211B3276F299E001CBBC6 /* FirebaseAuth in Frameworks */,
+				F68211B5276F299E001CBBC6 /* FirebaseFirestore in Frameworks */,
+				F68211BB276F299E001CBBC6 /* FirebaseStorage in Frameworks */,
+				F68211C3276F2DD4001CBBC6 /* MessageKit in Frameworks */,
+				3FE17B323AB17FB5DC474483 /* Pods_Just_Talk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1589C552D69593864E4AB035 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7ACBF7533956FF0BB21F631 /* Pods-Just-Talk.debug.xcconfig */,
+				539C56AD4EFA40F9C30C2B26 /* Pods-Just-Talk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1D8260B817473C637B2BA24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06F2E4A8C9E152D12E05AB69 /* Pods_Just_Talk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F682118B276F2830001CBBC6 = {
+			isa = PBXGroup;
+			children = (
+				F6821196276F2830001CBBC6 /* Just-Talk */,
+				F6821195276F2830001CBBC6 /* Products */,
+				1589C552D69593864E4AB035 /* Pods */,
+				F1D8260B817473C637B2BA24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F6821195276F2830001CBBC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6821194276F2830001CBBC6 /* Just-Talk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6821196276F2830001CBBC6 /* Just-Talk */ = {
+			isa = PBXGroup;
+			children = (
+				F68211C7276FA718001CBBC6 /* View */,
+				F6821197276F2830001CBBC6 /* AppDelegate.swift */,
+				F6821199276F2830001CBBC6 /* SceneDelegate.swift */,
+				F682119B276F2830001CBBC6 /* LoginVC.swift */,
+				F68211A5276F2830001CBBC6 /* Info.plist */,
+				F68211AD276F28EB001CBBC6 /* GoogleService-Info.plist */,
+				F68211C927707AD8001CBBC6 /* User.swift */,
+				F68211CB27707CA2001CBBC6 /* FCollectionReferenc.swift */,
+				F68211CD27708F49001CBBC6 /* FUserListener.swift */,
+				F68211CF2770997A001CBBC6 /* Constants.swift */,
+			);
+			path = "Just-Talk";
+			sourceTree = "<group>";
+		};
+		F68211C7276FA718001CBBC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F68211C8276FA742001CBBC6 /* Storybord */,
+				F68211A0276F2830001CBBC6 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F68211C8276FA742001CBBC6 /* Storybord */ = {
+			isa = PBXGroup;
+			children = (
+				F682119D276F2830001CBBC6 /* Main.storyboard */,
+				F68211A2276F2830001CBBC6 /* LaunchScreen.storyboard */,
+			);
+			path = Storybord;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6821193276F2830001CBBC6 /* Just-Talk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F68211A8276F2830001CBBC6 /* Build configuration list for PBXNativeTarget "Just-Talk" */;
+			buildPhases = (
+				FAEAF224CA62BA8AE55A2D9B /* [CP] Check Pods Manifest.lock */,
+				F6821190276F2830001CBBC6 /* Sources */,
+				F6821191276F2830001CBBC6 /* Frameworks */,
+				F6821192276F2830001CBBC6 /* Resources */,
+				A4CC6E315545666C2D52E4A7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Just-Talk";
+			packageProductDependencies = (
+				F68211B0276F299E001CBBC6 /* FirebaseAnalytics */,
+				F68211B2276F299E001CBBC6 /* FirebaseAuth */,
+				F68211B4276F299E001CBBC6 /* FirebaseFirestore */,
+				F68211B6276F299E001CBBC6 /* FirebaseFirestoreSwift-Beta */,
+				F68211B8276F299E001CBBC6 /* FirebaseMessaging */,
+				F68211BA276F299E001CBBC6 /* FirebaseStorage */,
+				F68211BF276F2C8B001CBBC6 /* RealmSwift */,
+				F68211C2276F2DD4001CBBC6 /* MessageKit */,
+				F68211C5276F2E10001CBBC6 /* InputBarAccessoryView */,
+			);
+			productName = "Just-Talk";
+			productReference = F6821194276F2830001CBBC6 /* Just-Talk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F682118C276F2830001CBBC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F6821193276F2830001CBBC6 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F682118F276F2830001CBBC6 /* Build configuration list for PBXProject "Just-Talk" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F682118B276F2830001CBBC6;
+			packageReferences = (
+				F68211AF276F299E001CBBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F68211BC276F2C8B001CBBC6 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				F68211C1276F2DD4001CBBC6 /* XCRemoteSwiftPackageReference "MessageKit" */,
+				F68211C4276F2E10001CBBC6 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */,
+			);
+			productRefGroup = F6821195276F2830001CBBC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6821193276F2830001CBBC6 /* Just-Talk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6821192276F2830001CBBC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68211A4276F2830001CBBC6 /* LaunchScreen.storyboard in Resources */,
+				F68211AE276F28EB001CBBC6 /* GoogleService-Info.plist in Resources */,
+				F68211A1276F2830001CBBC6 /* Assets.xcassets in Resources */,
+				F682119F276F2830001CBBC6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4CC6E315545666C2D52E4A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Just-Talk/Pods-Just-Talk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Just-Talk/Pods-Just-Talk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Just-Talk/Pods-Just-Talk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEAF224CA62BA8AE55A2D9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Just-Talk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6821190276F2830001CBBC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68211CA27707AD8001CBBC6 /* User.swift in Sources */,
+				F68211CE27708F49001CBBC6 /* FUserListener.swift in Sources */,
+				F68211CC27707CA2001CBBC6 /* FCollectionReferenc.swift in Sources */,
+				F682119C276F2830001CBBC6 /* LoginVC.swift in Sources */,
+				F68211D02770997A001CBBC6 /* Constants.swift in Sources */,
+				F6821198276F2830001CBBC6 /* AppDelegate.swift in Sources */,
+				F682119A276F2830001CBBC6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F682119D276F2830001CBBC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F682119E276F2830001CBBC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F68211A2276F2830001CBBC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F68211A3276F2830001CBBC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F68211A6276F2830001CBBC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F68211A7276F2830001CBBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F68211A9276F2830001CBBC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7ACBF7533956FF0BB21F631 /* Pods-Just-Talk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KXT36G9CAM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Just-Talk/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aryaf.Just-Talk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F68211AA276F2830001CBBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 539C56AD4EFA40F9C30C2B26 /* Pods-Just-Talk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KXT36G9CAM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Just-Talk/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aryaf.Just-Talk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F682118F276F2830001CBBC6 /* Build configuration list for PBXProject "Just-Talk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68211A6276F2830001CBBC6 /* Debug */,
+				F68211A7276F2830001CBBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F68211A8276F2830001CBBC6 /* Build configuration list for PBXNativeTarget "Just-Talk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68211A9276F2830001CBBC6 /* Debug */,
+				F68211AA276F2830001CBBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F68211AF276F299E001CBBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		F68211BC276F2C8B001CBBC6 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F68211C1276F2DD4001CBBC6 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F68211C4276F2E10001CBBC6 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nathantannar4/InputBarAccessoryView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F68211B0276F299E001CBBC6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F68211AF276F299E001CBBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F68211B2276F299E001CBBC6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F68211AF276F299E001CBBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F68211B4276F299E001CBBC6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F68211AF276F299E001CBBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F68211B6276F299E001CBBC6 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F68211AF276F299E001CBBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		F68211B8276F299E001CBBC6 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F68211AF276F299E001CBBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		F68211BA276F299E001CBBC6 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F68211AF276F299E001CBBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		F68211BF276F2C8B001CBBC6 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F68211BC276F2C8B001CBBC6 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		F68211C2276F2DD4001CBBC6 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F68211C1276F2DD4001CBBC6 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+		F68211C5276F2E10001CBBC6 /* InputBarAccessoryView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F68211C4276F2E10001CBBC6 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */;
+			productName = InputBarAccessoryView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F682118C276F2830001CBBC6 /* Project object */;
+}

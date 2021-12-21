@@ -1,0 +1,24 @@
+PODS:
+  - Gallery (2.4.0)
+  - ProgressHUD (13.6)
+  - SKPhotoBrowser (7.0.0)
+
+DEPENDENCIES:
+  - Gallery
+  - ProgressHUD
+  - SKPhotoBrowser
+
+SPEC REPOS:
+  trunk:
+    - Gallery
+    - ProgressHUD
+    - SKPhotoBrowser
+
+SPEC CHECKSUMS:
+  Gallery: b7fc1aeb68a39ad6d2c423574750196bf9b25e5c
+  ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
+  SKPhotoBrowser: 6aaa8f232752e87c7e76bace183bead0a137097d
+
+PODFILE CHECKSUM: 78da789b0f47574d44ada3db3e020348a58889af
+
+COCOAPODS: 1.11.2
