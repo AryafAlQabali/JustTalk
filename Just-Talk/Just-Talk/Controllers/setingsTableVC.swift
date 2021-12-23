@@ -83,10 +83,16 @@ class setingsTableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return section == 0 ? 0.0: 10.0
-        
-        
-        
+    
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 && indexPath.row == 0 {
+            
+            performSegue(withIdentifier: "SettingsToEditProfileSgue", sender: self)
+        }
+    }
+    
+    
     
     //MARK:- Update UI
     

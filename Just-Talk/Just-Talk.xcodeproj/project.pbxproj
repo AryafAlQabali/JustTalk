@@ -29,6 +29,7 @@
 		F68211CE27708F49001CBBC6 /* FUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211CD27708F49001CBBC6 /* FUserListener.swift */; };
 		F68211D02770997A001CBBC6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211CF2770997A001CBBC6 /* Constants.swift */; };
 		F6C48C8B2774623D0096EBD1 /* setingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C48C8A2774623D0096EBD1 /* setingsTableVC.swift */; };
+		F6C48C922774AD330096EBD1 /* EditProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C48C912774AD330096EBD1 /* EditProfileTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		F68211CD27708F49001CBBC6 /* FUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUserListener.swift; sourceTree = "<group>"; };
 		F68211CF2770997A001CBBC6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F6C48C8A2774623D0096EBD1 /* setingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setingsTableVC.swift; sourceTree = "<group>"; };
+		F6C48C912774AD330096EBD1 /* EditProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				F6821199276F2830001CBBC6 /* SceneDelegate.swift */,
 				F682119B276F2830001CBBC6 /* LoginVC.swift */,
 				F6C48C8A2774623D0096EBD1 /* setingsTableVC.swift */,
+				F6C48C912774AD330096EBD1 /* EditProfileTableVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			files = (
 				F68211CA27707AD8001CBBC6 /* User.swift in Sources */,
 				F68211CE27708F49001CBBC6 /* FUserListener.swift in Sources */,
+				F6C48C922774AD330096EBD1 /* EditProfileTableVC.swift in Sources */,
 				F68211CC27707CA2001CBBC6 /* FCollectionReferenc.swift in Sources */,
 				F682119C276F2830001CBBC6 /* LoginVC.swift in Sources */,
 				F68211D02770997A001CBBC6 /* Constants.swift in Sources */,
