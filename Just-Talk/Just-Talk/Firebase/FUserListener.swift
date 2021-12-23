@@ -29,9 +29,20 @@ class FUserListener {
             } else {
                 completion(error, false)
             }
+            
         }
+        
     
     }
+    
+    //MARK:- Logout
+    
+    
+    
+    
+    
+    
+    
     
     //MARK:- Register
     

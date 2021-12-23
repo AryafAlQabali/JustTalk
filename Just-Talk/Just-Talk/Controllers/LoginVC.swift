@@ -87,7 +87,6 @@ class LoginVC: UIViewController {
             isLogin ? loginUser() : registreUser()
             
         
-            
             //TODO:- LOGIN or Register
             
             //Register
@@ -216,7 +215,10 @@ class LoginVC: UIViewController {
             if error == nil {
             if isEmailVerified {
                 
-                //TODO TO the chat appliction
+                self.gotToApp()
+                
+                
+                
                 print("Go to appliction")
                 
                 
@@ -231,6 +233,13 @@ class LoginVC: UIViewController {
     }
     
 }
+    //MARK:- Navigation
+    private func  gotToApp() {
+        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainView") as! UITabBarController
+        
+        mainView.modalPresentationStyle = .fullScreen
+        self.present(mainView, animated: true, completion: nil)
+    }
     
 }
 

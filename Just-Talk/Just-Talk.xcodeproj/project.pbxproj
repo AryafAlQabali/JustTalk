@@ -28,6 +28,7 @@
 		F68211CC27707CA2001CBBC6 /* FCollectionReferenc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211CB27707CA2001CBBC6 /* FCollectionReferenc.swift */; };
 		F68211CE27708F49001CBBC6 /* FUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211CD27708F49001CBBC6 /* FUserListener.swift */; };
 		F68211D02770997A001CBBC6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211CF2770997A001CBBC6 /* Constants.swift */; };
+		F6C48C8B2774623D0096EBD1 /* setingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C48C8A2774623D0096EBD1 /* setingsTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		F68211CB27707CA2001CBBC6 /* FCollectionReferenc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReferenc.swift; sourceTree = "<group>"; };
 		F68211CD27708F49001CBBC6 /* FUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUserListener.swift; sourceTree = "<group>"; };
 		F68211CF2770997A001CBBC6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F6C48C8A2774623D0096EBD1 /* setingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setingsTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,16 +110,12 @@
 		F6821196276F2830001CBBC6 /* Just-Talk */ = {
 			isa = PBXGroup;
 			children = (
+				F6C48C9027748D3D0096EBD1 /* Model */,
+				F6C48C8F27748D1C0096EBD1 /* Helpers */,
+				F6C48C8D27748CB40096EBD1 /* Controllers */,
+				F6C48C8C27748C730096EBD1 /* Firebase */,
 				F68211C7276FA718001CBBC6 /* View */,
-				F6821197276F2830001CBBC6 /* AppDelegate.swift */,
-				F6821199276F2830001CBBC6 /* SceneDelegate.swift */,
-				F682119B276F2830001CBBC6 /* LoginVC.swift */,
 				F68211A5276F2830001CBBC6 /* Info.plist */,
-				F68211AD276F28EB001CBBC6 /* GoogleService-Info.plist */,
-				F68211C927707AD8001CBBC6 /* User.swift */,
-				F68211CB27707CA2001CBBC6 /* FCollectionReferenc.swift */,
-				F68211CD27708F49001CBBC6 /* FUserListener.swift */,
-				F68211CF2770997A001CBBC6 /* Constants.swift */,
 			);
 			path = "Just-Talk";
 			sourceTree = "<group>";
@@ -138,6 +136,43 @@
 				F68211A2276F2830001CBBC6 /* LaunchScreen.storyboard */,
 			);
 			path = Storybord;
+			sourceTree = "<group>";
+		};
+		F6C48C8C27748C730096EBD1 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				F68211CB27707CA2001CBBC6 /* FCollectionReferenc.swift */,
+				F68211CD27708F49001CBBC6 /* FUserListener.swift */,
+				F68211AD276F28EB001CBBC6 /* GoogleService-Info.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		F6C48C8D27748CB40096EBD1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6821197276F2830001CBBC6 /* AppDelegate.swift */,
+				F6821199276F2830001CBBC6 /* SceneDelegate.swift */,
+				F682119B276F2830001CBBC6 /* LoginVC.swift */,
+				F6C48C8A2774623D0096EBD1 /* setingsTableVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F6C48C8F27748D1C0096EBD1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F68211CF2770997A001CBBC6 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F6C48C9027748D3D0096EBD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F68211C927707AD8001CBBC6 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +313,7 @@
 				F68211CC27707CA2001CBBC6 /* FCollectionReferenc.swift in Sources */,
 				F682119C276F2830001CBBC6 /* LoginVC.swift in Sources */,
 				F68211D02770997A001CBBC6 /* Constants.swift in Sources */,
+				F6C48C8B2774623D0096EBD1 /* setingsTableVC.swift in Sources */,
 				F6821198276F2830001CBBC6 /* AppDelegate.swift in Sources */,
 				F682119A276F2830001CBBC6 /* SceneDelegate.swift in Sources */,
 			);
