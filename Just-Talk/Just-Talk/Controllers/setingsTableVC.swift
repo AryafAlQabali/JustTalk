@@ -49,8 +49,26 @@ class setingsTableVC: UITableViewController {
     @IBAction func termsButPressed(_ sender: UIButton) {
         print("terms and conditions")
     }
-    @IBAction func logoutButPressed(_ sender: Any) {
-    print("logout")
+    
+    @IBAction func logoutButPressed(_ sender: UIButton) {
+
+        FUserListener.shared.logoutCurrentUser { (error) in
+            
+            if error == nil {
+                let loginView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginView")
+                
+                
+                DispatchQueue.main.async {
+
+                    loginView.modalPresentationStyle = .fullScreen
+                    
+                    self.present(loginView, animated: true, completion: nil)
+                }
+                
+            }
+
+
+        }
     }
     
     

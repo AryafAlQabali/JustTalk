@@ -12,7 +12,7 @@
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Just_Talk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginView" id="BYZ-38-t0r" customClass="LoginVC" customModule="Just_Talk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQz-gf-fad">
-                                <rect key="frame" x="249.5" y="796" width="97.5" height="31"/>
+                                <rect key="frame" x="241.5" y="796" width="105.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                 <connections>
@@ -163,8 +163,8 @@
                             <constraint firstItem="JaU-dG-cAj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ACJ-zN-WhX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XjW-tt-gz0" secondAttribute="trailing" constant="20" id="S0D-Ya-gxy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sQz-gf-fad" secondAttribute="bottom" constant="35" id="SPI-UE-24S"/>
-                            <constraint firstItem="sQz-gf-fad" firstAttribute="leading" secondItem="npP-0i-ANa" secondAttribute="trailing" constant="8" id="TGv-qx-75P"/>
                             <constraint firstItem="JaU-dG-cAj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="TrY-2g-6w9"/>
+                            <constraint firstItem="sQz-gf-fad" firstAttribute="leading" secondItem="npP-0i-ANa" secondAttribute="trailing" id="n1x-9G-nzs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="npP-0i-ANa" secondAttribute="bottom" constant="40" id="qT2-mm-fkh"/>
                         </constraints>
                     </view>
@@ -407,7 +407,7 @@
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="profail" width="260" height="280"/>
         <namedColor name="ColorTableView">
-            <color red="0.94899999999999995" green="0.94899999999999995" blue="0.96899999999999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

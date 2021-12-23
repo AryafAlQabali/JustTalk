@@ -36,6 +36,18 @@ class FUserListener {
     }
     
     //MARK:- Logout
+    func logoutCurrentUser(completion: @escaping (_ error: Error?)-> Void){
+       
+        do {
+            try Auth.auth().signOut()
+            userDefaults.removeObject(forKey: kCURRENTUSER)
+            userDefaults.synchronize()
+            completion(nil)
+        } catch let erroe as NSError {
+                completion(erroe)
+            }
+    
+    }
     
     
     
