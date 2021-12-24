@@ -71,7 +71,7 @@ class FUserListener {
                 }
             }
             if authResults?.user != nil {
-                let user = User(id: authResults!.user.uid, username: email, email: email, pushld: "", avatarLink: "")
+                let user = User(id: authResults!.user.uid, username: email, email: email, pushld: "", avatarLink: "", status: " Hi!")
                 
                 
                 
@@ -107,10 +107,7 @@ class FUserListener {
     
     
     
-    
-    
-    
-    private func saveUserToFirestore (_ user: User) {
+     func saveUserToFirestore (_ user: User) {
         
         do {
            try FirebaseReference(.User).document(user.id).setData(from: user)

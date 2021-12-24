@@ -13,8 +13,9 @@ class setingsTableVC: UITableViewController {
     
     @IBOutlet weak var imageOutlet: UIImageView!
     
-    @IBOutlet weak var usernameOutlet: UILabel!
+    @IBOutlet weak var usernameLblOutlet: UILabel!
     
+    @IBOutlet weak var statusLblOutlet: UILabel!
     
     
     
@@ -81,10 +82,10 @@ class setingsTableVC: UITableViewController {
         return headerView
     }
     
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return section == 0 ? 0.0: 10.0
-    
-    }
+//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return section == 0 ? 0.0: 10.0
+//
+//    }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 && indexPath.row == 0 {
             
@@ -98,13 +99,18 @@ class setingsTableVC: UITableViewController {
     
     private func showUserInfo(){
         if let user = User.currentUser{
-            usernameOutlet.text = user.username
+            usernameLblOutlet.text = user.username
+            statusLblOutlet.text = user.status
             
             
             if user.avatarLink != "" {
 
                 
                 //TODO Download and set avater image
+                FileStorage.downloadImage(imageUrl: user.avatarLink) { (avatarImage) in
+                    self.imageOutlet.image = avatarImage?.circleMasked
+                }
+                
             }
         }
     }

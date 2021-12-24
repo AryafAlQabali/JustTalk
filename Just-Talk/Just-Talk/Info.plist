@@ -4,6 +4,8 @@
 <dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
+		<key></key>
+		<false/>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>
@@ -17,9 +19,17 @@
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Main</string>
+					<key></key>
+					<string></string>
 				</dict>
 			</array>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>The application needs your camera</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>The appliction needs your media library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>The application needs your photo library</string>
 </dict>
 </plist>

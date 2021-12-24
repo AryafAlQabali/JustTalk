@@ -15,3 +15,6 @@ public let kCURRENTUSER = "currentUser"
 
 
 public let  userDefaults = UserDefaults.standard
+
+
+public let kFILEREFERENCE = "gs://jtalk-877ae.appspot.com"

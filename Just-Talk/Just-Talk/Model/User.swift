@@ -16,6 +16,12 @@ struct User: Codable {
     var email: String
     var pushld = ""
     var avatarLink = ""
+    var status: String
+    
+    
+    static var currentId: String {
+        return Auth.auth().currentUser!.uid
+    }
     
     
     static var currentUser: User? {

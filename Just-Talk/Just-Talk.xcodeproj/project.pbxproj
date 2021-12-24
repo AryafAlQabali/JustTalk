@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FE17B323AB17FB5DC474483 /* Pods_Just_Talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F2E4A8C9E152D12E05AB69 /* Pods_Just_Talk.framework */; };
+		F64C854027765916009BFF48 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64C853F27765916009BFF48 /* Extensions.swift */; };
 		F6821198276F2830001CBBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6821197276F2830001CBBC6 /* AppDelegate.swift */; };
 		F682119A276F2830001CBBC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6821199276F2830001CBBC6 /* SceneDelegate.swift */; };
 		F682119C276F2830001CBBC6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682119B276F2830001CBBC6 /* LoginVC.swift */; };
@@ -30,12 +31,15 @@
 		F68211D02770997A001CBBC6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211CF2770997A001CBBC6 /* Constants.swift */; };
 		F6C48C8B2774623D0096EBD1 /* setingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C48C8A2774623D0096EBD1 /* setingsTableVC.swift */; };
 		F6C48C922774AD330096EBD1 /* EditProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C48C912774AD330096EBD1 /* EditProfileTableVC.swift */; };
+		F6E404322775C50500E68982 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E404312775C50500E68982 /* FileStorage.swift */; };
+		F6E40434277641F900E68982 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E40433277641F900E68982 /* GlobalFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06F2E4A8C9E152D12E05AB69 /* Pods_Just_Talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Just_Talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		539C56AD4EFA40F9C30C2B26 /* Pods-Just-Talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just-Talk.release.xcconfig"; path = "Target Support Files/Pods-Just-Talk/Pods-Just-Talk.release.xcconfig"; sourceTree = "<group>"; };
 		C7ACBF7533956FF0BB21F631 /* Pods-Just-Talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just-Talk.debug.xcconfig"; path = "Target Support Files/Pods-Just-Talk/Pods-Just-Talk.debug.xcconfig"; sourceTree = "<group>"; };
+		F64C853F27765916009BFF48 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F6821194276F2830001CBBC6 /* Just-Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just-Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6821197276F2830001CBBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6821199276F2830001CBBC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		F68211CF2770997A001CBBC6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F6C48C8A2774623D0096EBD1 /* setingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setingsTableVC.swift; sourceTree = "<group>"; };
 		F6C48C912774AD330096EBD1 /* EditProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableVC.swift; sourceTree = "<group>"; };
+		F6E404312775C50500E68982 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		F6E40433277641F900E68982 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,7 @@
 			children = (
 				F68211CB27707CA2001CBBC6 /* FCollectionReferenc.swift */,
 				F68211CD27708F49001CBBC6 /* FUserListener.swift */,
+				F6E404312775C50500E68982 /* FileStorage.swift */,
 				F68211AD276F28EB001CBBC6 /* GoogleService-Info.plist */,
 			);
 			path = Firebase;
@@ -166,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				F68211CF2770997A001CBBC6 /* Constants.swift */,
+				F6E40433277641F900E68982 /* GlobalFunctions.swift */,
+				F64C853F27765916009BFF48 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -311,11 +320,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E40434277641F900E68982 /* GlobalFunctions.swift in Sources */,
 				F68211CA27707AD8001CBBC6 /* User.swift in Sources */,
+				F6E404322775C50500E68982 /* FileStorage.swift in Sources */,
 				F68211CE27708F49001CBBC6 /* FUserListener.swift in Sources */,
 				F6C48C922774AD330096EBD1 /* EditProfileTableVC.swift in Sources */,
 				F68211CC27707CA2001CBBC6 /* FCollectionReferenc.swift in Sources */,
 				F682119C276F2830001CBBC6 /* LoginVC.swift in Sources */,
+				F64C854027765916009BFF48 /* Extensions.swift in Sources */,
 				F68211D02770997A001CBBC6 /* Constants.swift in Sources */,
 				F6C48C8B2774623D0096EBD1 /* setingsTableVC.swift in Sources */,
 				F6821198276F2830001CBBC6 /* AppDelegate.swift in Sources */,
