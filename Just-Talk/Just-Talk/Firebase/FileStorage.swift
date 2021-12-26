@@ -16,7 +16,7 @@ let storage = Storage.storage()
 class FileStorage {
     
     //MARK:- Images
-    class func uplodeImage (_ image: UIImage, directory: String, completion: @escaping (_ documentLink: String?)-> Void) {
+    class func uploadeImage (_ image: UIImage, directory: String, completion: @escaping (_ documentLink: String?)-> Void) {
         
         //1. Create folder on firestore
         let storageRef = storage.reference(forURL: kFILEREFERENCE).child(directory)

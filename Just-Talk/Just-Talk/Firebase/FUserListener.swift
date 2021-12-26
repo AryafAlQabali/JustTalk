@@ -134,7 +134,7 @@ class FUserListener {
         }
             let result = Result {
             
-          try? userDocument.data (as: User.self)
+   try? userDocument.data (as: User.self)
     }
             switch result {
             case.success(let userObject):

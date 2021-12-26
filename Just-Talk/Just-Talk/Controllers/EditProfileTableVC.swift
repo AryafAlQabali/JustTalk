@@ -8,7 +8,7 @@
 import UIKit
 import Gallery
 import ProgressHUD
-import simd
+
 
 
 
@@ -61,8 +61,14 @@ class EditProfileTableVC: UITableViewController {
         headerView.backgroundColor = UIColor(named: "ColorTableView")
         return headerView
     }
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 2 && indexPath.row == 0 {
+            performSegue(withIdentifier: "editProfileToStatusSegue", sender: self)
+        }
+    }
 
+    
+    
     
     //MARK:- Show user info
     
@@ -80,6 +86,7 @@ class EditProfileTableVC: UITableViewController {
                 FileStorage.downloadImage(imageUrl: user.avatarLink) { (avatarImage) in
                     self.avatarImageViewOutlet.image = avatarImage?.circleMasked
                 }
+                
                 //ما تنسيهاش
         }
     }
@@ -87,6 +94,7 @@ class EditProfileTableVC: UITableViewController {
     
     
 }
+
 
 extension EditProfileTableVC: UITextFieldDelegate {
     
@@ -141,7 +149,7 @@ extension EditProfileTableVC: UITextFieldDelegate {
         let fileDirectory = "Avatars/" + "_\(User.currentId)" + ".jpg"
         
         
-        FileStorage.uplodeImage(image, directory: fileDirectory) { (avatarLink) in
+        FileStorage.uploadeImage(image, directory: fileDirectory) { (avatarLink) in
             if var user = User.currentUser{
         
                 
