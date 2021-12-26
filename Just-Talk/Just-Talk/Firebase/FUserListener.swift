@@ -7,6 +7,7 @@
 
 import Foundation
 import Firebase
+import FirebaseFirestoreSwift
 
 
 
@@ -149,4 +150,31 @@ class FUserListener {
             }
 }
 }
+    
+    
+    func downloadAllUsersFoemFirestore(completion: @escaping (_ allUsers: [User])-> Void) {
+        var users: [User] = []
+        
+        FirebaseReference(.User).getDocuments { (snapshot, error) in
+            guard let documents = snapshot?.documents else {
+                print(" No document found")
+                return
+            }
+            let allUsers = documents.compactMap { (snapshot) -> User? in
+                return try? snapshot.data(as: User.self)
+            }
+            for user in allUsers {
+                if User.currentId != user.id {
+                    users.append(user)
+                }
+            }
+            completion(users)
+        }
+    }
+    
+    
+    
+    
+    
+    
 }

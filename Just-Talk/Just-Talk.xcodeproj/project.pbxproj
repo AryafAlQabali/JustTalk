@@ -11,6 +11,7 @@
 		F62B55412777AE3B004168F9 /* StatusTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B55402777AE3B004168F9 /* StatusTableVC.swift */; };
 		F62B554327784951004168F9 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B554227784951004168F9 /* UsersTableViewCell.swift */; };
 		F62B554527784978004168F9 /* UsersTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B554427784978004168F9 /* UsersTableVC.swift */; };
+		F62D39882778E31500C365E5 /* ProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D39872778E31500C365E5 /* ProfileTableVC.swift */; };
 		F64C854027765916009BFF48 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64C853F27765916009BFF48 /* Extensions.swift */; };
 		F6821198276F2830001CBBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6821197276F2830001CBBC6 /* AppDelegate.swift */; };
 		F682119A276F2830001CBBC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6821199276F2830001CBBC6 /* SceneDelegate.swift */; };
@@ -45,6 +46,7 @@
 		F62B55402777AE3B004168F9 /* StatusTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableVC.swift; sourceTree = "<group>"; };
 		F62B554227784951004168F9 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		F62B554427784978004168F9 /* UsersTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableVC.swift; sourceTree = "<group>"; };
+		F62D39872778E31500C365E5 /* ProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableVC.swift; sourceTree = "<group>"; };
 		F64C853F27765916009BFF48 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F6821194276F2830001CBBC6 /* Just-Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just-Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6821197276F2830001CBBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				F62B55402777AE3B004168F9 /* StatusTableVC.swift */,
 				F62B554227784951004168F9 /* UsersTableViewCell.swift */,
 				F62B554427784978004168F9 /* UsersTableVC.swift */,
+				F62D39872778E31500C365E5 /* ProfileTableVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6E40434277641F900E68982 /* GlobalFunctions.swift in Sources */,
+				F62D39882778E31500C365E5 /* ProfileTableVC.swift in Sources */,
 				F68211CA27707AD8001CBBC6 /* User.swift in Sources */,
 				F6E404322775C50500E68982 /* FileStorage.swift in Sources */,
 				F68211CE27708F49001CBBC6 /* FUserListener.swift in Sources */,

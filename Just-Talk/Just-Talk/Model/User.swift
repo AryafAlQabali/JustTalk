@@ -62,7 +62,7 @@ func  saveUserLocally(_ user: User) {
     func createdummyusers() {
         print("creating dummy users...")
 
-        let names = ["arya","jood","hind", "hadeel", "ahlam"]
+        let names = ["Arya","Jood","Hind", "Hadeel", "Ahlam"]
 
         var imageIndex = 1
         var userIndex = 1
@@ -72,7 +72,7 @@ func  saveUserLocally(_ user: User) {
             let id = UUID().uuidString
             let fileDirctory = "Avatars/" + "_\(id)" + ".jpg"
 
-            FileStorage.uploadeImage(UIImage(named: "user\(imageIndex)")! , directory: fileDirctory) {
+            FileStorage.uploadeImage(UIImage(named: "user\(imageIndex)")!, directory: fileDirctory) {
                 (avatarLink) in
 
                 let user = User(id: id, username: names[i], email:"user\(userIndex)@mail.com", pushld: "", avatarLink: avatarLink ?? "", status: "No Status")
