@@ -11,7 +11,7 @@ import FirebaseFirestoreSwift
 import UIKit
 
 
-struct User: Codable {
+struct User: Codable , Equatable {
     var id = ""
     var username: String
     var email: String
@@ -46,6 +46,15 @@ struct User: Codable {
     return nil
 }
 
+    static func == (lift: User, right: User)-> Bool {
+        lift.id == right.id
+    }
+    
+    
+    
+    
+    
+    
 }
 func  saveUserLocally(_ user: User) {
     let ecoder = JSONEncoder()

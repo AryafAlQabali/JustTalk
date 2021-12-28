@@ -13,6 +13,11 @@
 		F62B554527784978004168F9 /* UsersTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B554427784978004168F9 /* UsersTableVC.swift */; };
 		F62D39882778E31500C365E5 /* ProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D39872778E31500C365E5 /* ProfileTableVC.swift */; };
 		F64C854027765916009BFF48 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64C853F27765916009BFF48 /* Extensions.swift */; };
+		F658B7EE2779954300C8E3F1 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F658B7ED2779954300C8E3F1 /* ChatRoom.swift */; };
+		F658B7F02779A21D00C8E3F1 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F658B7EF2779A21D00C8E3F1 /* ChatTableViewCell.swift */; };
+		F658B7F22779AD1C00C8E3F1 /* ChatRoomTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F658B7F12779AD1C00C8E3F1 /* ChatRoomTableVC.swift */; };
+		F658B7F42779CE6C00C8E3F1 /* StartChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F658B7F32779CE6C00C8E3F1 /* StartChat.swift */; };
+		F658B7F6277A43CD00C8E3F1 /* FChatRoomListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F658B7F5277A43CD00C8E3F1 /* FChatRoomListener.swift */; };
 		F6821198276F2830001CBBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6821197276F2830001CBBC6 /* AppDelegate.swift */; };
 		F682119A276F2830001CBBC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6821199276F2830001CBBC6 /* SceneDelegate.swift */; };
 		F682119C276F2830001CBBC6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682119B276F2830001CBBC6 /* LoginVC.swift */; };
@@ -48,6 +53,11 @@
 		F62B554427784978004168F9 /* UsersTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableVC.swift; sourceTree = "<group>"; };
 		F62D39872778E31500C365E5 /* ProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableVC.swift; sourceTree = "<group>"; };
 		F64C853F27765916009BFF48 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F658B7ED2779954300C8E3F1 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		F658B7EF2779A21D00C8E3F1 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		F658B7F12779AD1C00C8E3F1 /* ChatRoomTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableVC.swift; sourceTree = "<group>"; };
+		F658B7F32779CE6C00C8E3F1 /* StartChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartChat.swift; sourceTree = "<group>"; };
+		F658B7F5277A43CD00C8E3F1 /* FChatRoomListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FChatRoomListener.swift; sourceTree = "<group>"; };
 		F6821194276F2830001CBBC6 /* Just-Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just-Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6821197276F2830001CBBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6821199276F2830001CBBC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +170,7 @@
 				F68211CB27707CA2001CBBC6 /* FCollectionReferenc.swift */,
 				F68211CD27708F49001CBBC6 /* FUserListener.swift */,
 				F6E404312775C50500E68982 /* FileStorage.swift */,
+				F658B7F5277A43CD00C8E3F1 /* FChatRoomListener.swift */,
 				F68211AD276F28EB001CBBC6 /* GoogleService-Info.plist */,
 			);
 			path = Firebase;
@@ -177,6 +188,8 @@
 				F62B554227784951004168F9 /* UsersTableViewCell.swift */,
 				F62B554427784978004168F9 /* UsersTableVC.swift */,
 				F62D39872778E31500C365E5 /* ProfileTableVC.swift */,
+				F658B7EF2779A21D00C8E3F1 /* ChatTableViewCell.swift */,
+				F658B7F12779AD1C00C8E3F1 /* ChatRoomTableVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +200,7 @@
 				F68211CF2770997A001CBBC6 /* Constants.swift */,
 				F6E40433277641F900E68982 /* GlobalFunctions.swift */,
 				F64C853F27765916009BFF48 /* Extensions.swift */,
+				F658B7F32779CE6C00C8E3F1 /* StartChat.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -195,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				F68211C927707AD8001CBBC6 /* User.swift */,
+				F658B7ED2779954300C8E3F1 /* ChatRoom.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,6 +350,8 @@
 				F6E40434277641F900E68982 /* GlobalFunctions.swift in Sources */,
 				F62D39882778E31500C365E5 /* ProfileTableVC.swift in Sources */,
 				F68211CA27707AD8001CBBC6 /* User.swift in Sources */,
+				F658B7F02779A21D00C8E3F1 /* ChatTableViewCell.swift in Sources */,
+				F658B7F6277A43CD00C8E3F1 /* FChatRoomListener.swift in Sources */,
 				F6E404322775C50500E68982 /* FileStorage.swift in Sources */,
 				F68211CE27708F49001CBBC6 /* FUserListener.swift in Sources */,
 				F6C48C922774AD330096EBD1 /* EditProfileTableVC.swift in Sources */,
@@ -344,9 +361,12 @@
 				F64C854027765916009BFF48 /* Extensions.swift in Sources */,
 				F62B55412777AE3B004168F9 /* StatusTableVC.swift in Sources */,
 				F68211D02770997A001CBBC6 /* Constants.swift in Sources */,
+				F658B7EE2779954300C8E3F1 /* ChatRoom.swift in Sources */,
 				F62B554327784951004168F9 /* UsersTableViewCell.swift in Sources */,
 				F6C48C8B2774623D0096EBD1 /* setingsTableVC.swift in Sources */,
+				F658B7F42779CE6C00C8E3F1 /* StartChat.swift in Sources */,
 				F6821198276F2830001CBBC6 /* AppDelegate.swift in Sources */,
+				F658B7F22779AD1C00C8E3F1 /* ChatRoomTableVC.swift in Sources */,
 				F682119A276F2830001CBBC6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

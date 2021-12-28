@@ -32,3 +32,13 @@ extension UIImage {
         }
     }
 }
+
+
+extension Date {
+      
+    func longDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "DD MM YYYY"
+        return dateFormatter.string(from: self)
+    }
+}

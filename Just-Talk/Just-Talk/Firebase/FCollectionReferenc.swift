@@ -10,9 +10,10 @@ import Firebase
 
 enum FCollectionReference: String{
     case User
+    case Chat
 }
 
-func FirebaseReference(_ collectionReference: FCollectionReference) -> CollectionReference {
+func FirestoreReference(_ collectionReference: FCollectionReference) -> CollectionReference {
     return Firestore.firestore().collection(collectionReference.rawValue)
     
 }

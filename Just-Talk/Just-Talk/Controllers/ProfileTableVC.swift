@@ -55,5 +55,15 @@ class ProfileTableVC: UITableViewController {
         headerView.backgroundColor = UIColor(named: "ColorTableView")
         return headerView
     }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.section == 1 {
+            print("Start chating")
+        
+            let chatId = startChat(sender: User.currentUser!, receiver: user!)
+        }
+    }
 
 }

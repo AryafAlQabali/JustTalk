@@ -111,7 +111,7 @@ class FUserListener {
      func saveUserToFirestore (_ user: User) {
         
         do {
-           try FirebaseReference(.User).document(user.id).setData(from: user)
+           try FirestoreReference(.User).document(user.id).setData(from: user)
         }catch{
             print(error.localizedDescription)
     }
@@ -127,7 +127,7 @@ class FUserListener {
     //MARK:- Downlaod user from firestor
     private func downloadUserFromFirestore(userId: String) {
         
-        FirebaseReference(.User).document(userId).getDocument { (document, error) in
+        FirestoreReference(.User).document(userId).getDocument { (document, error) in
             
             guard let userDocument = document else {
                 print("No data found")
@@ -155,7 +155,7 @@ class FUserListener {
     func downloadAllUsersFoemFirestore(completion: @escaping (_ allUsers: [User])-> Void) {
         var users: [User] = []
         
-        FirebaseReference(.User).getDocuments { (snapshot, error) in
+        FirestoreReference(.User).getDocuments { (snapshot, error) in
             guard let documents = snapshot?.documents else {
                 print(" No document found")
                 return

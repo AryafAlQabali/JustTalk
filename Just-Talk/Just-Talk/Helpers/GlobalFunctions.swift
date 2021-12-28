@@ -15,3 +15,21 @@ func fileNameFrom(fileUrl: String) -> String {
     return name2!
      
 }
+
+func timeElapsed (_ date: Date) -> String {
+    let seconds = Date().timeIntervalSince(date)
+    var elapsed = ""
+    
+    if seconds < 60 {
+        elapsed = "Just now"
+    }
+    else if seconds < 60 * 60 {
+        let minutes = Int(seconds/60)
+        let minText = minutes > 1 ? "mins" : "min"
+        elapsed = "\(minutes) \(minText)"
+    }
+    else {
+        elapsed = "\(date.longDate())"
+    }
+    return elapsed
+}

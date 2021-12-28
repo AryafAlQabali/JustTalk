@@ -116,6 +116,17 @@ class setingsTableVC: UITableViewController {
     }
 
     
+    @IBAction func darkAndLight(_ sender: Any) {
+        if #available(iOS 13.0, *){
+            let appDelegate = UIApplication.shared.windows.first
+            if (sender as AnyObject).isOn {
+                appDelegate?.overrideUserInterfaceStyle = .dark
+                return
+            }
+            appDelegate?.overrideUserInterfaceStyle = .light
+            return
+        }
+    }
     
     
 }
