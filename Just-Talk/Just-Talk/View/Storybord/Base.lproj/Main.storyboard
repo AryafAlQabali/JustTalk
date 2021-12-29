@@ -293,7 +293,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Section-3" id="fe8-hh-o3g">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="gEO-6O-Er7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="gEO-6O-Er7">
                                         <rect key="frame" x="20" y="299.5" width="374" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gEO-6O-Er7" id="wIP-JR-fjy">
@@ -325,7 +325,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Section-4" id="lb3-j4-X9s">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="BBV-Cf-kQA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="BBV-Cf-kQA">
                                         <rect key="frame" x="20" y="399.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BBV-Cf-kQA" id="Bat-jm-Inw">
@@ -485,14 +485,14 @@
                             <tableViewSection headerTitle="Section-3" id="cTR-WC-3eA">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="dDr-tw-QMp">
-                                        <rect key="frame" x="20" y="444.5" width="374" height="43"/>
+                                        <rect key="frame" x="20" y="444.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dDr-tw-QMp" id="Y7x-NF-ySQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="345.5" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="345.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P3-2V-YOu">
-                                                    <rect key="frame" x="20" y="11" width="49" height="21"/>
+                                                    <rect key="frame" x="20" y="11" width="49" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -663,7 +663,13 @@
                             <outlet property="delegate" destination="Ota-e0-87B" id="WnZ-8D-OqY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Chat" id="uhw-wk-NMg"/>
+                    <navigationItem key="navigationItem" title="Chat" id="uhw-wk-NMg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="Yf5-mW-0FV">
+                            <connections>
+                                <action selector="comoseButPressed:" destination="Ota-e0-87B" id="YLh-P2-xV7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfR-KA-prZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -691,7 +697,7 @@
         <!--Users-->
         <scene sceneID="TEV-kg-QMa">
             <objects>
-                <tableViewController id="Zoc-xG-bd7" customClass="UsersTableVC" customModule="Just_Talk" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="usersView" id="Zoc-xG-bd7" customClass="UsersTableVC" customModule="Just_Talk" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ufz-dN-2sH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -749,9 +755,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Users" largeTitleDisplayMode="always" id="Bei-nW-sp6"/>
-                    <connections>
-                        <outlet property="tableView" destination="ufz-dN-2sH" id="FmZ-8d-ubm"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6a-2E-ih6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -814,14 +817,14 @@
                             <tableViewSection headerTitle="Section-2" id="IQs-4B-r6t">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Ni1-ac-ACR">
-                                        <rect key="frame" x="0.0" y="311.5" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="311.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ni1-ac-ACR" id="1bL-44-UAX">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEa-oE-hoP">
-                                                    <rect key="frame" x="20" y="11" width="78" height="21"/>
+                                                    <rect key="frame" x="20" y="11" width="78" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>

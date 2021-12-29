@@ -22,6 +22,13 @@ class FChatRoomListener{
             print("No able to save documents", error.localizedDescription)
         }
     }
+    //MARK:- Delete function
+    func deleteChatRoom(_ chatRoom: ChatRoom) {
+        FirestoreReference(.Chat).document(chatRoom.id).delete()
+        
+        
+        
+    }
     
     
     //MARK:- Download all chat rooms

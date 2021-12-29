@@ -24,6 +24,13 @@ class LoginVC: UIViewController {
         
         setupBagroundTap()
         
+        let email = UIImage(named: "email")
+        addleftImg(textField: emailTextFieldOutlet, img: email!)
+        let password = UIImage(named: "lock")
+        addleftImg(textField: passwordTextFieldOutlet, img: password!)
+        let confirpassword = UIImage(named: "lock")
+        addleftImg(textField: confirmPasswordTextFieldOutlet, img: confirpassword!)
+        
         
     }
     
@@ -239,6 +246,17 @@ class LoginVC: UIViewController {
         
         mainView.modalPresentationStyle = .fullScreen
         self.present(mainView, animated: true, completion: nil)
+    }
+    
+    
+    //MARK:- TextFied test
+    
+    
+    func addleftImg(textField:UITextField, img: UIImage) {
+        let leftimgView = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: 20, height: 20))
+        leftimgView.image = img
+        textField.leftView = leftimgView
+        textField.leftViewMode = .always
     }
     
 }
