@@ -128,6 +128,10 @@ class ChatRoomTableVC: UITableViewController {
     
     func  goToMessage(chatRoom: ChatRoom) {
         
+        //MARK:- To make sure that both users have chatrooms
+        
+        restartChat(chatRoomId: chatRoom.chatRoomId, memberIds: chatRoom.memberIds)
+        
         let privateMessageView = MessageVC(chatId: chatRoom.chatRoomId, recipientId: chatRoom.receiverId, recipientName: chatRoom.receiverName)
         
         navigationController?.pushViewController(privateMessageView, animated: true)

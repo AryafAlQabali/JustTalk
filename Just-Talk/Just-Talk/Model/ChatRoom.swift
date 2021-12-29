@@ -17,7 +17,7 @@ struct ChatRoom : Codable {
     var receiverId = ""
     var receiverName = ""
     @ServerTimestamp var date = Date()
-var memberId = [""]
+    var memberIds = [""]
     var lastMessage = ""
     var unreadCounter = 0
     var avaterLink = ""

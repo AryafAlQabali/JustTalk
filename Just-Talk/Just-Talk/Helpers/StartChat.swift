@@ -6,8 +6,22 @@
 //
 
 import Foundation
-import UIKit
 import Firebase
+
+func restartChat(chatRoomId: String, memberIds: [String]) {
+    
+    //Download users using memberIds
+    FUserListener.shared.downloadUsersFromFirestor(withIds: memberIds) { (allUsers) in
+       
+        if allUsers.count > 0 {
+            createChatRooms(chatRoomId: chatRoomId, users: allUsers)
+        }
+    }
+}
+
+
+
+
 
 func startChat (sender: User, receiver: User) -> String {
     
@@ -55,7 +69,7 @@ func createChatRooms (chatRoomId: String, users: [User]) {
                         
                         let receiverUser = userId == User.currentId ? getRecieverFrom(users: users) : User.currentUser!
                         
-                        let chatRoomObject = ChatRoom(id: UUID().uuidString, chatRoomId: chatRoomId, senderId: senderUser.id, senderName: senderUser.username, receiverId: receiverUser.id, receiverName: receiverUser.username, date: Date(), memberId: [senderUser.id,receiverUser.id], lastMessage: "", unreadCounter: 0, avaterLink: receiverUser.avatarLink)
+                        let chatRoomObject = ChatRoom(id: UUID().uuidString, chatRoomId: chatRoomId, senderId: senderUser.id, senderName: senderUser.username, receiverId: receiverUser.id, receiverName: receiverUser.username, date: Date(), memberIds: [senderUser.id,receiverUser.id], lastMessage: "", unreadCounter: 0, avaterLink: receiverUser.avatarLink)
                         
                     
                     //TODO : save chat to firestore
