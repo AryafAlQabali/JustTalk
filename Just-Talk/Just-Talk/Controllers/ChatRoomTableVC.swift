@@ -99,6 +99,15 @@ class ChatRoomTableVC: UITableViewController {
         
         }
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let chatRoomObjeect =  searchController.isActive ? filteredChatRooms[indexPath.row] : allChatRooms[indexPath.row]
+        
+        goToMessage(chatRoom: chatRoomObjeect)
+        
+    }
+    
+    
+    
     
     
     
@@ -115,6 +124,14 @@ class ChatRoomTableVC: UITableViewController {
         }
     }
     
+    //MARK:- Navigation
+    
+    func  goToMessage(chatRoom: ChatRoom) {
+        
+        let privateMessageView = MessageVC(chatId: chatRoom.chatRoomId, recipientId: chatRoom.receiverId, recipientName: chatRoom.receiverName)
+        
+        navigationController?.pushViewController(privateMessageView, animated: true)
+    }
     
 }
 

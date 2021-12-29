@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FE17B323AB17FB5DC474483 /* Pods_Just_Talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F2E4A8C9E152D12E05AB69 /* Pods_Just_Talk.framework */; };
+		F61A5BD2277C6FF300709C52 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A5BD1277C6FF300709C52 /* MessageVC.swift */; };
 		F62B55412777AE3B004168F9 /* StatusTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B55402777AE3B004168F9 /* StatusTableVC.swift */; };
 		F62B554327784951004168F9 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B554227784951004168F9 /* UsersTableViewCell.swift */; };
 		F62B554527784978004168F9 /* UsersTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B554427784978004168F9 /* UsersTableVC.swift */; };
@@ -48,6 +49,7 @@
 		06F2E4A8C9E152D12E05AB69 /* Pods_Just_Talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Just_Talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		539C56AD4EFA40F9C30C2B26 /* Pods-Just-Talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just-Talk.release.xcconfig"; path = "Target Support Files/Pods-Just-Talk/Pods-Just-Talk.release.xcconfig"; sourceTree = "<group>"; };
 		C7ACBF7533956FF0BB21F631 /* Pods-Just-Talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just-Talk.debug.xcconfig"; path = "Target Support Files/Pods-Just-Talk/Pods-Just-Talk.debug.xcconfig"; sourceTree = "<group>"; };
+		F61A5BD1277C6FF300709C52 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		F62B55402777AE3B004168F9 /* StatusTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableVC.swift; sourceTree = "<group>"; };
 		F62B554227784951004168F9 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		F62B554427784978004168F9 /* UsersTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableVC.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				F62D39872778E31500C365E5 /* ProfileTableVC.swift */,
 				F658B7EF2779A21D00C8E3F1 /* ChatTableViewCell.swift */,
 				F658B7F12779AD1C00C8E3F1 /* ChatRoomTableVC.swift */,
+				F61A5BD1277C6FF300709C52 /* MessageVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				F658B7F42779CE6C00C8E3F1 /* StartChat.swift in Sources */,
 				F6821198276F2830001CBBC6 /* AppDelegate.swift in Sources */,
 				F658B7F22779AD1C00C8E3F1 /* ChatRoomTableVC.swift in Sources */,
+				F61A5BD2277C6FF300709C52 /* MessageVC.swift in Sources */,
 				F682119A276F2830001CBBC6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -63,6 +63,11 @@ class ProfileTableVC: UITableViewController {
             print("Start chating")
         
             let chatId = startChat(sender: User.currentUser!, receiver: user!)
+            
+            
+            let privateMessage = MessageVC(chatId: chatId, recipientId: user!.id, recipientName: user!.username)
+            
+            navigationController?.pushViewController(privateMessage, animated: true)
         }
     }
 
