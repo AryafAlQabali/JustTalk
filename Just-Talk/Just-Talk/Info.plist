@@ -31,5 +31,7 @@
 	<string>The appliction needs your media library</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>The application needs your photo library</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>$(PRODUCT_NAME) needs your location</string>
 </dict>
 </plist>

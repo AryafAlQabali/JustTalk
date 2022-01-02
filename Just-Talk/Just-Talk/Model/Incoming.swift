@@ -9,6 +9,8 @@
 import Foundation
 import MessageKit
 import CoreLocation
+import UIKit
+
 
 class Incoming {
     
@@ -22,6 +24,44 @@ class Incoming {
     func createMKMessage (LocalMSG: LocalMSG) -> MKMessage {
         
         let mkMessage = MKMessage(message: LocalMSG)
-         return mkMessage
+         
+    
+      
+    if LocalMSG.type == kPHOTO {
+        
+        let photoItem = PhotoMSG(path: LocalMSG.picturUrl)
+        mkMessage.photoItem = photoItem
+        mkMessage.kind = MessageKind.photo(photoItem)
+        
+        FileStorage.downloadImage(imageUrl: LocalMSG.picturUrl) { (image) in
+            
+            mkMessage.photoItem?.image = image
+            
+            self.messageViewController.messagesCollectionView.reloadData()
+        }
     }
+        
+        
+        
+        
+        if LocalMSG.type == kVIDEO {
+            FileStorage.downloadImage(imageUrl: LocalMSG.picturUrl) { (thumbnail) in
+                FileStorage.downloadVideo(videoUrl: LocalMSG.videoUrl) { (readyToPlay, fileName) in
+                    
+                    let videoLink = URL (fileURLWithPath: fileInDocumentsDirectory(fileName: fileName))
+                    let videoItem = VideoMSG(url: videoLink)
+                    
+                    mkMessage.videoItem = videoItem
+                    mkMessage.kind = MessageKind.video(videoItem)
+                    
+                    mkMessage.videoItem?.image = thumbnail
+                    self.messageViewController.messagesCollectionView.reloadData()
+                    
+                }
+            }
+        }
+        return mkMessage
+    
+    
+}
 }

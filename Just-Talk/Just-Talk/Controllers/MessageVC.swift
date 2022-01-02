@@ -60,6 +60,8 @@ class MessageVC: MessagesViewController {
     var minMessageNumber = 0
     var typingCounter = 0
     
+    var gallery: GalleryController!
+    
     
     //MARK:- init
     init(chatId: String, recipientId: String, recipientName: String) {
@@ -124,9 +126,10 @@ configureMSGCollectionView()
         
         attachBut.setSize(CGSize(width: 30, height: 30), animated: false)
         attachBut.onTouchUpInside { item in
-            print("Attaching")
+          
+            
 
-            //TODO:- Attach action
+            self.actionAttachMessage()
         }
         
 //        let micBut = InputBarButtonItem()
@@ -260,6 +263,64 @@ configureMSGCollectionView()
         
     
 }
+    
+    
+    
+    
+    
+    
+//    __________________________________________________________________
+//    _________________________________________________________________
+    
+    
+    
+    
+    
+    
+    private func actionAttachMessage() {
+        
+        messageInputBar.inputTextView.resignFirstResponder()
+        
+        let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let takePhotoOrVideo = UIAlertAction(title: "Camera", style: .default) { (alert) in
+            self.showImageGallery(camera: true)
+
+        }
+        
+        let shareMedia = UIAlertAction(title: "Library", style: .default) { (alert) in
+            self.showImageGallery(camera: false)
+          
+        }
+        
+        let shareLocation = UIAlertAction(title: "Show Location", style: .default) { (alert) in
+      
+            if let _ = LocationManager.shared.currentLocation {
+                self.send(text: nil, photo: nil, video: nil, audio: nil, location: kLOCATION)
+            }
+        }
+            
+        
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        takePhotoOrVideo.setValue(UIImage(systemName: "camera"), forKey: "image")
+        shareMedia.setValue(UIImage(systemName: "photo.fill"), forKey: "image")
+        shareLocation.setValue(UIImage(systemName: "mappin.and.ellipse"), forKey: "image")
+//
+        
+        optionMenu.addAction(takePhotoOrVideo)
+        optionMenu.addAction(shareMedia)
+        optionMenu.addAction(shareLocation)
+        optionMenu.addAction(cancelAction)
+        
+        self.present(optionMenu, animated: true, completion: nil)
+            
+    }
+
+    
+    
+    
     
     override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
@@ -432,4 +493,56 @@ configureMSGCollectionView()
     }
     
     
+    
+     //MARK:- Gallery
+    
+    private func showImageGallery(camera: Bool) {
+        
+        gallery = GalleryController()
+        gallery.delegate = self
+        Config.tabsToShow = camera ? [.cameraTab] : [.imageTab, .videoTab]
+        Config.Camera.imageLimit = 1
+        Config.initialTab = .imageTab
+        Config.VideoEditor.maximumDuration = 30
+        
+        self.present(gallery, animated: true, completion: nil)
+        
+    }
+    
+    
+    
 }
+
+extension MessageVC : GalleryControllerDelegate {
+    func galleryController(_ controller: GalleryController, didSelectImages images: [Image]) {
+        
+            
+            //TODO:- SEND Photo Image
+            
+            if images.count > 0 {
+                images.first!.resolve { (image) in
+                    self.send(text: nil, photo: image, video: nil, audio: nil, location: nil)
+                }
+            }
+            print ("we have selected \(images.count)")
+            controller.dismiss(animated: true, completion: nil)
+        }
+        
+        func galleryController(_ controller: GalleryController, didSelectVideo video: Video) {
+            
+            self.send(text: nil, photo: nil, video: video, audio: nil, location: nil)
+            controller.dismiss(animated: true, completion: nil)
+        }
+        
+        func galleryController(_ controller: GalleryController, requestLightbox images: [Image]) {
+            controller.dismiss(animated: true, completion: nil)
+        }
+        
+        func galleryControllerDidCancel(_ controller: GalleryController) {
+            controller.dismiss(animated: true, completion: nil)
+            
+        }
+        
+        
+    }
+

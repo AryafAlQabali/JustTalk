@@ -34,16 +34,16 @@ class Outgoing {
         }
         
         if photo != nil {
-//            sendPhoto(message: message, photo: photo!, memberIds: memberIds)
+            sendPhoto(message: message, photo: photo!, memberIds: memberIds)
         }
         
         if video != nil {
-//            sendVideo(message: message, video: video!, memberIds: memberIds)
+            sendVideo(message: message, video: video!, memberIds: memberIds)
             
         }
         
         if location != nil {
-//            sendLocation(message: message, memberIds: memberIds)
+            sendLocation(message: message, memberIds: memberIds)
         }
         
         if audio != nil {
@@ -73,4 +73,82 @@ class Outgoing {
     }
 
 
+
+
+
+func sendPhoto(message: LocalMSG, photo: UIImage, memberIds: [String]) {
+    message.message = "Photo Message"
+    message.type = kPHOTO
+    
+    
+    let fileName = Date().stringDate()
+    let fileDirectory = "MediaMessages/Photo/" + "\(message.chatRoomId)" + "_\(fileName)" + ".jpg"
+
+
+    FileStorage.saveFileLocally(fileData: photo.jpegData(compressionQuality: 0.6)! as NSData, fileName: fileName)
+
+    FileStorage.uploadeImage(photo, directory: fileDirectory) { (imageURL) in
+
+        if imageURL != nil {
+            message.picturUrl = imageURL!
+        Outgoing.saveMessage(message: message, memberIds: memberIds)//
+            }
+        }
+    }
+
+
+func sendVideo(message: LocalMSG, video: Video, memberIds:[String]) {
+    message.message = "Video Message"
+    message.type = kVIDEO
+    
+    
+    let fileName = Date().stringDate()
+    
+    let thumbnailDirectory = "MediaMessages/Photo/" + "\(message.chatRoomId)" + "_\(fileName)" + ".jpg"
+    let videoDirectory = "MediaMessages/Video/" + "\(message.chatRoomId)" + "_\(fileName)" + ".mov"
+
+    let editor = VideoEditor()
+    
+    editor.process(video: video) { (processedVideo, videoUrl) in
+        
+        if let tempPath = videoUrl {
+            
+            let thumbnail = videoThumbnail(videoURL: tempPath)
+            
+            FileStorage.saveFileLocally(fileData: thumbnail.jpegData(compressionQuality: 0.7)! as NSData, fileName: fileName)
+            FileStorage.uploadeImage(thumbnail, directory: thumbnailDirectory) { (imageLink) in
+                
+                if imageLink != nil {
+                    let videoData = NSData(contentsOfFile: tempPath.path)
+                    
+                    FileStorage.saveFileLocally(fileData: videoData!, fileName: fileName + ".mov")
+                    
+                    FileStorage.uploadeImage(videoData!, directory: videoDirectory) { (videoLink) in
+                        
+                        message.videoUrl = videoLink ?? ""
+                        message.picturUrl = imageLink ?? ""
+                        
+                        Outgoing.saveMessage(message: message, memberIds: memberIds)
+
+
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+func sendLocation(message: LocalMSG, memberIds: [String]) {
+    
+    let currentLocation = LocationManager.shared.currentLocation
+    
+    message.message = "Location Message"
+    message.type = kLOCATION
+    message.latitude = currentLocation?.latitude ?? 0.0
+    message.longitude = currentLocation?.longitude ?? 0.0
+  
+        Outgoing.saveMessage(message: message, memberIds: memberIds)
+    }
+    
 
