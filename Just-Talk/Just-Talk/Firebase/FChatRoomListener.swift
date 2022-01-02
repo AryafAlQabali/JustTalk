@@ -57,4 +57,69 @@ class FChatRoomListener{
         }
     }
     
+    
+     //MARK:- reset unread counter
+    
+    func clearUnreadCounter(chatRoom: ChatRoom) {
+        
+        var newChatRoom = chatRoom
+        newChatRoom.unreadCounter = 0
+        self.saveChatRoom(newChatRoom)
+    }
+    
+    
+    func clearUnreadCounterUnsingChatRoomId(chatRoomId: String) {
+        
+        FirestoreReference(.Chat).whereField(kCHATROOMID, isEqualTo: chatRoomId).whereField(kSENDERID, isEqualTo: User.currentId).getDocuments { (querySnapshot, error) in
+            
+            guard let documents = querySnapshot?.documents else {return}
+            
+            let allChatRooms = documents.compactMap { (querySnapshot) -> ChatRoom? in
+                return try? querySnapshot.data(as: ChatRoom.self)
+                
+            }
+            if allChatRooms.count > 0 {
+                self.clearUnreadCounter(chatRoom: allChatRooms.first!)
+            }
+            
+        }
+        
+    }
+
+    
+     //MARK:- Update Chatroom with New message
+    
+    private func updateChatRoomWithNewMessage(chatRoom: ChatRoom, lastMessage: String) {
+        var tempChatRoom = chatRoom
+        
+        if tempChatRoom.senderId != User.currentId {
+            tempChatRoom.unreadCounter += 1
+        }
+        
+        tempChatRoom.lastMessage = lastMessage
+        tempChatRoom.date = Date()
+        self.saveChatRoom(tempChatRoom)
+        
+        
+    }
+    
+    func updateChatRooms (chatRoomId: String, lastMessage: String) {
+        
+        FirestoreReference(.Chat).whereField(kCHATROOMID, isEqualTo: chatRoomId).getDocuments { (querySnapshot, error) in
+            
+            guard let documents = querySnapshot?.documents else { return }
+            
+            let allChatRooms = documents.compactMap { (querySnapshot) -> ChatRoom? in
+                return try? querySnapshot.data(as: ChatRoom.self)
+                                
+            }
+            
+            for chatRoom in allChatRooms {
+                self.updateChatRoomWithNewMessage(chatRoom: chatRoom, lastMessage: lastMessage)
+            }
+            
+        }
+        
+    }
+    
 }

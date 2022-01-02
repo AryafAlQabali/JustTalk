@@ -14,7 +14,23 @@
 		F62B554327784951004168F9 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B554227784951004168F9 /* UsersTableViewCell.swift */; };
 		F62B554527784978004168F9 /* UsersTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B554427784978004168F9 /* UsersTableVC.swift */; };
 		F62D39882778E31500C365E5 /* ProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D39872778E31500C365E5 /* ProfileTableVC.swift */; };
+		F633C94A2780BFC5006796B7 /* FTypingListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633C9492780BFC5006796B7 /* FTypingListener.swift */; };
+		F633C94C2780C0CF006796B7 /* Outging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633C94B2780C0CF006796B7 /* Outging.swift */; };
+		F633C94E2780C0F1006796B7 /* Incoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633C94D2780C0F1006796B7 /* Incoming.swift */; };
+		F633C9502780C119006796B7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633C94F2780C119006796B7 /* LocationManager.swift */; };
+		F633C9522780C13F006796B7 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633C9512780C13F006796B7 /* MapAnnotation.swift */; };
+		F633C9542780C157006796B7 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633C9532780C157006796B7 /* Audio.swift */; };
+		F633C9562780C199006796B7 /* BasicAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F633C9552780C199006796B7 /* BasicAudio.swift */; };
 		F64C854027765916009BFF48 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64C853F27765916009BFF48 /* Extensions.swift */; };
+		F6530FF5277D905000F3A002 /* MSGDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6530FF4277D905000F3A002 /* MSGDataSources.swift */; };
+		F6530FF7277D907100F3A002 /* MSGCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6530FF6277D907100F3A002 /* MSGCellDelegate.swift */; };
+		F6530FF9277D90A500F3A002 /* MSGDisplayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6530FF8277D90A500F3A002 /* MSGDisplayDelegate.swift */; };
+		F6530FFB277D90C800F3A002 /* MSGLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6530FFA277D90C800F3A002 /* MSGLayoutDelegate.swift */; };
+		F6530FFD277D911600F3A002 /* InputBarAccessoryViewDelegete.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6530FFC277D911600F3A002 /* InputBarAccessoryViewDelegete.swift */; };
+		F6530FFF277D95FE00F3A002 /* MessageKitSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6530FFE277D95FE00F3A002 /* MessageKitSender.swift */; };
+		F6531001277D97FA00F3A002 /* MKMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6531000277D97FA00F3A002 /* MKMessage.swift */; };
+		F6531003277DEEB200F3A002 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6531002277DEEB200F3A002 /* RealmManager.swift */; };
+		F6531005277DF19200F3A002 /* FMessageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6531004277DF19200F3A002 /* FMessageListener.swift */; };
 		F658B7EE2779954300C8E3F1 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F658B7ED2779954300C8E3F1 /* ChatRoom.swift */; };
 		F658B7F02779A21D00C8E3F1 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F658B7EF2779A21D00C8E3F1 /* ChatTableViewCell.swift */; };
 		F658B7F22779AD1C00C8E3F1 /* ChatRoomTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F658B7F12779AD1C00C8E3F1 /* ChatRoomTableVC.swift */; };
@@ -56,7 +72,23 @@
 		F62B554227784951004168F9 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		F62B554427784978004168F9 /* UsersTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableVC.swift; sourceTree = "<group>"; };
 		F62D39872778E31500C365E5 /* ProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableVC.swift; sourceTree = "<group>"; };
+		F633C9492780BFC5006796B7 /* FTypingListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTypingListener.swift; sourceTree = "<group>"; };
+		F633C94B2780C0CF006796B7 /* Outging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outging.swift; sourceTree = "<group>"; };
+		F633C94D2780C0F1006796B7 /* Incoming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incoming.swift; sourceTree = "<group>"; };
+		F633C94F2780C119006796B7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F633C9512780C13F006796B7 /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		F633C9532780C157006796B7 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		F633C9552780C199006796B7 /* BasicAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAudio.swift; sourceTree = "<group>"; };
 		F64C853F27765916009BFF48 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F6530FF4277D905000F3A002 /* MSGDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSGDataSources.swift; sourceTree = "<group>"; };
+		F6530FF6277D907100F3A002 /* MSGCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSGCellDelegate.swift; sourceTree = "<group>"; };
+		F6530FF8277D90A500F3A002 /* MSGDisplayDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSGDisplayDelegate.swift; sourceTree = "<group>"; };
+		F6530FFA277D90C800F3A002 /* MSGLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSGLayoutDelegate.swift; sourceTree = "<group>"; };
+		F6530FFC277D911600F3A002 /* InputBarAccessoryViewDelegete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBarAccessoryViewDelegete.swift; sourceTree = "<group>"; };
+		F6530FFE277D95FE00F3A002 /* MessageKitSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageKitSender.swift; sourceTree = "<group>"; };
+		F6531000277D97FA00F3A002 /* MKMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMessage.swift; sourceTree = "<group>"; };
+		F6531002277DEEB200F3A002 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		F6531004277DF19200F3A002 /* FMessageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMessageListener.swift; sourceTree = "<group>"; };
 		F658B7ED2779954300C8E3F1 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		F658B7EF2779A21D00C8E3F1 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		F658B7F12779AD1C00C8E3F1 /* ChatRoomTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableVC.swift; sourceTree = "<group>"; };
@@ -119,6 +151,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F6530FF3277D8FFC00F3A002 /* MessageExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6530FF4277D905000F3A002 /* MSGDataSources.swift */,
+				F6530FF6277D907100F3A002 /* MSGCellDelegate.swift */,
+				F6530FF8277D90A500F3A002 /* MSGDisplayDelegate.swift */,
+				F6530FFA277D90C800F3A002 /* MSGLayoutDelegate.swift */,
+				F6530FFC277D911600F3A002 /* InputBarAccessoryViewDelegete.swift */,
+			);
+			path = MessageExtensions;
+			sourceTree = "<group>";
+		};
 		F682118B276F2830001CBBC6 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +220,8 @@
 				F6E404312775C50500E68982 /* FileStorage.swift */,
 				F658B7F5277A43CD00C8E3F1 /* FChatRoomListener.swift */,
 				F68211AD276F28EB001CBBC6 /* GoogleService-Info.plist */,
+				F6531004277DF19200F3A002 /* FMessageListener.swift */,
+				F633C9492780BFC5006796B7 /* FTypingListener.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -195,6 +241,7 @@
 				F658B7EF2779A21D00C8E3F1 /* ChatTableViewCell.swift */,
 				F658B7F12779AD1C00C8E3F1 /* ChatRoomTableVC.swift */,
 				F61A5BD1277C6FF300709C52 /* MessageVC.swift */,
+				F6530FF3277D8FFC00F3A002 /* MessageExtensions */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -216,6 +263,15 @@
 				F68211C927707AD8001CBBC6 /* User.swift */,
 				F658B7ED2779954300C8E3F1 /* ChatRoom.swift */,
 				F61A5BD3277C885400709C52 /* LocalMSG.swift */,
+				F6530FFE277D95FE00F3A002 /* MessageKitSender.swift */,
+				F6531000277D97FA00F3A002 /* MKMessage.swift */,
+				F6531002277DEEB200F3A002 /* RealmManager.swift */,
+				F633C94B2780C0CF006796B7 /* Outging.swift */,
+				F633C94D2780C0F1006796B7 /* Incoming.swift */,
+				F633C94F2780C119006796B7 /* LocationManager.swift */,
+				F633C9512780C13F006796B7 /* MapAnnotation.swift */,
+				F633C9532780C157006796B7 /* Audio.swift */,
+				F633C9552780C199006796B7 /* BasicAudio.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -354,28 +410,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6E40434277641F900E68982 /* GlobalFunctions.swift in Sources */,
+				F6530FFF277D95FE00F3A002 /* MessageKitSender.swift in Sources */,
+				F6531005277DF19200F3A002 /* FMessageListener.swift in Sources */,
 				F62D39882778E31500C365E5 /* ProfileTableVC.swift in Sources */,
 				F68211CA27707AD8001CBBC6 /* User.swift in Sources */,
+				F633C94C2780C0CF006796B7 /* Outging.swift in Sources */,
 				F658B7F02779A21D00C8E3F1 /* ChatTableViewCell.swift in Sources */,
 				F658B7F6277A43CD00C8E3F1 /* FChatRoomListener.swift in Sources */,
+				F633C9502780C119006796B7 /* LocationManager.swift in Sources */,
 				F6E404322775C50500E68982 /* FileStorage.swift in Sources */,
 				F68211CE27708F49001CBBC6 /* FUserListener.swift in Sources */,
 				F6C48C922774AD330096EBD1 /* EditProfileTableVC.swift in Sources */,
+				F6530FF7277D907100F3A002 /* MSGCellDelegate.swift in Sources */,
 				F68211CC27707CA2001CBBC6 /* FCollectionReferenc.swift in Sources */,
 				F62B554527784978004168F9 /* UsersTableVC.swift in Sources */,
 				F682119C276F2830001CBBC6 /* LoginVC.swift in Sources */,
 				F64C854027765916009BFF48 /* Extensions.swift in Sources */,
+				F6530FFD277D911600F3A002 /* InputBarAccessoryViewDelegete.swift in Sources */,
+				F6530FFB277D90C800F3A002 /* MSGLayoutDelegate.swift in Sources */,
+				F6530FF9277D90A500F3A002 /* MSGDisplayDelegate.swift in Sources */,
+				F6530FF5277D905000F3A002 /* MSGDataSources.swift in Sources */,
+				F633C94E2780C0F1006796B7 /* Incoming.swift in Sources */,
 				F62B55412777AE3B004168F9 /* StatusTableVC.swift in Sources */,
 				F68211D02770997A001CBBC6 /* Constants.swift in Sources */,
 				F658B7EE2779954300C8E3F1 /* ChatRoom.swift in Sources */,
 				F62B554327784951004168F9 /* UsersTableViewCell.swift in Sources */,
+				F633C9542780C157006796B7 /* Audio.swift in Sources */,
 				F6C48C8B2774623D0096EBD1 /* setingsTableVC.swift in Sources */,
 				F658B7F42779CE6C00C8E3F1 /* StartChat.swift in Sources */,
 				F6821198276F2830001CBBC6 /* AppDelegate.swift in Sources */,
+				F6531003277DEEB200F3A002 /* RealmManager.swift in Sources */,
 				F658B7F22779AD1C00C8E3F1 /* ChatRoomTableVC.swift in Sources */,
 				F61A5BD2277C6FF300709C52 /* MessageVC.swift in Sources */,
+				F633C94A2780BFC5006796B7 /* FTypingListener.swift in Sources */,
 				F61A5BD4277C885400709C52 /* LocalMSG.swift in Sources */,
+				F633C9522780C13F006796B7 /* MapAnnotation.swift in Sources */,
 				F682119A276F2830001CBBC6 /* SceneDelegate.swift in Sources */,
+				F6531001277D97FA00F3A002 /* MKMessage.swift in Sources */,
+				F633C9562780C199006796B7 /* BasicAudio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

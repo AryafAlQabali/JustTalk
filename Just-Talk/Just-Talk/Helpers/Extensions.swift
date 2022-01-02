@@ -38,7 +38,13 @@ extension Date {
       
     func longDate() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "DD MM YYYY"
+        dateFormatter.dateFormat = "dd MM yyyy"
+        return dateFormatter.string(from: self)
+    }
+    
+    func time() ->String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
         return dateFormatter.string(from: self)
     }
 }
