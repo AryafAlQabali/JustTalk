@@ -47,8 +47,11 @@ class Outgoing {
         }
         
         if audio != nil {
-//            sendAudio(message: message, audioFileName: audio!, audioDuration: audioDuration, memberIds: memberIds)
-        //3. Save message locally
+            sendAudio(message: message, audioFileName: audio!, audioDuration: audioDuration, memberIds: memberIds)
+    
+            
+            
+            //3. Save message locally
         //4. Save message to firestore
     }
         FChatRoomListener.shared.updateChatRooms(chatRoomId: chatId, lastMessage: message.message)
@@ -150,5 +153,27 @@ func sendLocation(message: LocalMSG, memberIds: [String]) {
   
         Outgoing.saveMessage(message: message, memberIds: memberIds)
     }
+
+
+func sendAudio(message: LocalMSG, audioFileName: String, audioDuration: Float, memberIds: [String]) {
+   
+    message.message = "Audio Message"
+    message.type = kAUDIO
+    let fileDirectory = "MediaMessages/Audio/" + "\(message.chatRoomId)" + "_\(audioFileName)" + ".m4a"
+    
+    FileStorage.uploadAudio(audioFileName, directory: fileDirectory) { (audioLink) in
+        
+        if audioLink != nil {
+            
+            message.audioUrl = audioLink ?? ""
+            message.audioDuration = Double(audioDuration)
+                  Outgoing.saveMessage(message: message, memberIds: memberIds)
+            
+        }
+        
+    }
+
+    
+}
     
 

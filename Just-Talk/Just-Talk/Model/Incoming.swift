@@ -60,6 +60,38 @@ class Incoming {
                 }
             }
         }
+        
+        if LocalMSG.type == kLOCATION {
+            
+            let locationItem = LocationMSG(location: CLLocation(latitude: LocalMSG.latitude, longitude: LocalMSG.longitude))
+            
+            mkMessage.kind = MessageKind.location(locationItem)
+            mkMessage.locationItem = locationItem
+        
+        }
+        
+        if LocalMSG.type == kAUDIO {
+            
+            let audioMessage = AudioMSG(duration: Float(LocalMSG.audioDuration))
+            
+            mkMessage.audioItem = audioMessage
+            mkMessage.kind = MessageKind.audio(audioMessage)
+
+            FileStorage.downloadAudio(audioUrl: LocalMSG.audioUrl) { (fileName) in
+                
+                let audioURL = URL(fileURLWithPath: fileInDocumentsDirectory(fileName: fileName))
+
+                mkMessage.audioItem?.url = audioURL
+                
+                
+                
+                
+            }
+            self.messageViewController.messagesCollectionView.reloadData()
+            
+            
+        }
+        
         return mkMessage
     
     

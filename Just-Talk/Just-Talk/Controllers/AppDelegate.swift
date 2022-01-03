@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
-        LocationManager.shared.stopUpdating()
+        LocationManager.shared.startUpdating()
+        
         return true
     }
 

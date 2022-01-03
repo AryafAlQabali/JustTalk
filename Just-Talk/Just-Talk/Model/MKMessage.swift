@@ -7,6 +7,7 @@
 
 import Foundation
 import MessageKit
+import CoreLocation
 
 
 class MKMessage: NSObject, MessageType {
@@ -23,6 +24,8 @@ class MKMessage: NSObject, MessageType {
     
     var photoItem:PhotoMSG?
     var videoItem: VideoMSG?
+    var locationItem: LocationMSG?
+    var audioItem : AudioMSG?
    
     
     var status: String
@@ -57,18 +60,18 @@ class MKMessage: NSObject, MessageType {
             self.videoItem = videoItem
 
 
-//        case kLOCATION:
-//            let locationItem = LocationMessage(location: CLLocation(latitude: message.latitude, longitude: message.longitude))
-//
-//            self.kind = MessageKind.location(locationItem)
-//            self.locationItem = locationItem
-//
-//
-//        case kAUDIO:
-//            let audioItem = AudioMessage(duration: 2.0)
-//            self.kind = MessageKind.audio(audioItem)
-//            self.audioItem = audioItem
-//
+        case kLOCATION:
+            let locationItem = LocationMSG(location: CLLocation(latitude: message.latitude, longitude: message.longitude))
+
+            self.kind = MessageKind.location(locationItem)
+            self.locationItem = locationItem
+
+
+        case kAUDIO:
+            let audioItem = AudioMSG(duration: 2.0)
+            self.kind = MessageKind.audio(audioItem)
+            self.audioItem = audioItem
+
         default:
            // self.kind = MessageKind.text(message.message)
             print ("unknow error")

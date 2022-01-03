@@ -32,6 +32,8 @@
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>The application needs your photo library</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>$(PRODUCT_NAME) needs your location</string>
+	<string>The application needs your location</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>The application needs your Microphone</string>
 </dict>
 </plist>

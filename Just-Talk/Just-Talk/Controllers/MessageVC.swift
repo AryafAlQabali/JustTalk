@@ -60,7 +60,18 @@ class MessageVC: MessagesViewController {
     var minMessageNumber = 0
     var typingCounter = 0
     
+    
+    
     var gallery: GalleryController!
+    
+    var longPressGesture: UILongPressGestureRecognizer!
+    
+    
+    var audioFileName : String = ""
+    var audioStartTime: Date = Date()
+    
+    open lazy var audioController = BasicAudioController(messageCollectionView: messagesCollectionView)
+    
     
     
     //MARK:- init
@@ -83,6 +94,9 @@ class MessageVC: MessagesViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureGestureRecognizer()
+        
 configureMSGCollectionView()
         configureMessageInputBar()
        // self.title = recipientName
@@ -95,6 +109,8 @@ configureMSGCollectionView()
         createTypingObsever()
         
         listenForReadStatusUpdates()
+        
+  
         
         
         // Do any additional setup after loading the view.
@@ -137,7 +153,8 @@ configureMSGCollectionView()
         micBut.setSize(CGSize(width: 30, height: 30), animated: false)
         
         
-        //Add gesture recognizer
+        
+        micBut.addGestureRecognizer(longPressGesture)
         messageInputBar.setStackViewItems([attachBut], forStack: .left, animated: false)
         
         messageInputBar.setLeftStackViewWidthConstant(to: 36, animated: false)
@@ -158,6 +175,14 @@ configureMSGCollectionView()
         
     }
     
+    
+    //Long Press configuration
+    
+    private func configureGestureRecognizer() {
+        
+        longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(recordAndSend))
+        
+    }
     
     
     
@@ -263,6 +288,43 @@ configureMSGCollectionView()
         
     
 }
+    //Record and Send function
+    
+    @objc func recordAndSend() {
+        
+        switch longPressGesture.state {
+        case .began:
+            
+            //record and start recording
+            print ("begin recording")
+            audioFileName = Date().stringDate()
+            audioStartTime = Date()
+            AudioRecorder.shared.startRecording(fileName: audioFileName)
+                
+        case .ended:
+            //stop recording
+            AudioRecorder.shared.finishRecording()
+            
+            if fileExistsAtPath(path: audioFileName + ".m4a") {
+                
+                let audioDuration = audioStartTime.interval(ofComponent: .second, to: Date())
+                
+                send(text: nil, photo: nil, video: nil, audio: audioFileName, location: nil, audioDuration: audioDuration)
+                
+            }
+            else {
+                print ("No file found")
+            }
+            
+
+        @unknown default:
+            print ("Unknown")
+        }
+
+        
+        
+    
+    }
     
     
     
