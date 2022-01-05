@@ -107,11 +107,12 @@ class LoginVC: UIViewController {
     }
     @IBAction func loginPressed(_ sender: UIButton) {
         
-        updataUIMode(mode: isLogin)
+        updateUIMode(mode: isLogin)
     }
     
     
-    private func updataUIMode(mode: Bool) {
+    private func updateUIMode(mode: Bool) {
+        
         if !mode {
             titleOutlet.text = "Login"
             confirmPasswordLblOutlet.isHidden = true
@@ -121,20 +122,20 @@ class LoginVC: UIViewController {
             haveAnAccountOutlet.text = "New here?"
             forgetPasswordOutlet.isHidden = false
             resendEmailOutlet.isHidden = true
-            
-            
-        }else {
+        } else {
             titleOutlet.text = "Register"
             confirmPasswordLblOutlet.isHidden = false
             confirmPasswordTextFieldOutlet.isHidden = false
             registerOutlet.setTitle("Register", for: .normal)
             loginOutlet.setTitle("Login", for: .normal)
             haveAnAccountOutlet.text = "Have an account?"
-            forgetPasswordOutlet.isHidden = true
             resendEmailOutlet.isHidden = false
-            
+            forgetPasswordOutlet.isHidden = true
+          
         }
+        
         isLogin.toggle()
+        
     }
     //MARK:- Helpers or Utilites
     private func isDataInputedFor (mode: String) -> Bool {

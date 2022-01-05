@@ -128,6 +128,24 @@ class setingsTableVC: UITableViewController {
         }
     }
     
+    @IBAction func Language(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Error", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        
+        
+        let settings = UIAlertAction(title: "Settings", style: .default, handler: { (action) -> Void in
+
+            
+            UIApplication.shared.open(URL(string: "App-Prefs:root=GENERAL")!, options: [:], completionHandler: nil)
+            
+        })
+        
+        alert.addAction(settings)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
     
 }
 

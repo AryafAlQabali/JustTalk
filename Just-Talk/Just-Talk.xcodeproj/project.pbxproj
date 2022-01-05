@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3FE17B323AB17FB5DC474483 /* Pods_Just_Talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F2E4A8C9E152D12E05AB69 /* Pods_Just_Talk.framework */; };
+		F605030C278478F0001445F4 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F605030B278478F0001445F4 /* OnboardingSlide.swift */; };
+		F605030F27847C43001445F4 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F605030E27847C43001445F4 /* OnboardingCollectionViewCell.swift */; };
 		F6196F212781C52400DABDDA /* PhotoMSG.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6196F202781C52400DABDDA /* PhotoMSG.swift */; };
 		F6196F242781D9FD00DABDDA /* VideoMSG.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6196F232781D9FD00DABDDA /* VideoMSG.swift */; };
 		F6196F262781E06C00DABDDA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6196F252781E06C00DABDDA /* LocationManager.swift */; };
@@ -61,6 +63,8 @@
 		F68211CC27707CA2001CBBC6 /* FCollectionReferenc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211CB27707CA2001CBBC6 /* FCollectionReferenc.swift */; };
 		F68211CE27708F49001CBBC6 /* FUserListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211CD27708F49001CBBC6 /* FUserListener.swift */; };
 		F68211D02770997A001CBBC6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68211CF2770997A001CBBC6 /* Constants.swift */; };
+		F69C7CBC27844129002DE124 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C7CBB27844129002DE124 /* OnboardingVC.swift */; };
+		F69C7CBE27847729002DE124 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C7CBD27847729002DE124 /* UIViewExtensions.swift */; };
 		F6C48C8B2774623D0096EBD1 /* setingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C48C8A2774623D0096EBD1 /* setingsTableVC.swift */; };
 		F6C48C922774AD330096EBD1 /* EditProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C48C912774AD330096EBD1 /* EditProfileTableVC.swift */; };
 		F6E404322775C50500E68982 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E404312775C50500E68982 /* FileStorage.swift */; };
@@ -71,6 +75,8 @@
 		06F2E4A8C9E152D12E05AB69 /* Pods_Just_Talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Just_Talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		539C56AD4EFA40F9C30C2B26 /* Pods-Just-Talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just-Talk.release.xcconfig"; path = "Target Support Files/Pods-Just-Talk/Pods-Just-Talk.release.xcconfig"; sourceTree = "<group>"; };
 		C7ACBF7533956FF0BB21F631 /* Pods-Just-Talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just-Talk.debug.xcconfig"; path = "Target Support Files/Pods-Just-Talk/Pods-Just-Talk.debug.xcconfig"; sourceTree = "<group>"; };
+		F605030B278478F0001445F4 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		F605030E27847C43001445F4 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6196F202781C52400DABDDA /* PhotoMSG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMSG.swift; sourceTree = "<group>"; };
 		F6196F232781D9FD00DABDDA /* VideoMSG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMSG.swift; sourceTree = "<group>"; };
 		F6196F252781E06C00DABDDA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -117,6 +123,8 @@
 		F68211CB27707CA2001CBBC6 /* FCollectionReferenc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReferenc.swift; sourceTree = "<group>"; };
 		F68211CD27708F49001CBBC6 /* FUserListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUserListener.swift; sourceTree = "<group>"; };
 		F68211CF2770997A001CBBC6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F69C7CBB27844129002DE124 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		F69C7CBD27847729002DE124 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		F6C48C8A2774623D0096EBD1 /* setingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setingsTableVC.swift; sourceTree = "<group>"; };
 		F6C48C912774AD330096EBD1 /* EditProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableVC.swift; sourceTree = "<group>"; };
 		F6E404312775C50500E68982 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
@@ -159,6 +167,15 @@
 				06F2E4A8C9E152D12E05AB69 /* Pods_Just_Talk.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F605030D27847BF4001445F4 /* Onborarding */ = {
+			isa = PBXGroup;
+			children = (
+				F69C7CBB27844129002DE124 /* OnboardingVC.swift */,
+				F605030E27847C43001445F4 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onborarding;
 			sourceTree = "<group>";
 		};
 		F6196F222781D9C500DABDDA /* MediaMSG */ = {
@@ -254,6 +271,7 @@
 			children = (
 				F6821197276F2830001CBBC6 /* AppDelegate.swift */,
 				F6821199276F2830001CBBC6 /* SceneDelegate.swift */,
+				F605030D27847BF4001445F4 /* Onborarding */,
 				F682119B276F2830001CBBC6 /* LoginVC.swift */,
 				F6C48C8A2774623D0096EBD1 /* setingsTableVC.swift */,
 				F6C48C912774AD330096EBD1 /* EditProfileTableVC.swift */,
@@ -277,6 +295,7 @@
 				F6E40433277641F900E68982 /* GlobalFunctions.swift */,
 				F64C853F27765916009BFF48 /* Extensions.swift */,
 				F658B7F32779CE6C00C8E3F1 /* StartChat.swift */,
+				F69C7CBD27847729002DE124 /* UIViewExtensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -295,6 +314,7 @@
 				F6196F222781D9C500DABDDA /* MediaMSG */,
 				F63F23572782F58700EFFB49 /* MapAnnotation.swift */,
 				F63F235B27830D1F00EFFB49 /* BaiscAudioControler.swift */,
+				F605030B278478F0001445F4 /* OnboardingSlide.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -436,6 +456,7 @@
 				F6E40434277641F900E68982 /* GlobalFunctions.swift in Sources */,
 				F6530FFF277D95FE00F3A002 /* MessageKitSender.swift in Sources */,
 				F6531005277DF19200F3A002 /* FMessageListener.swift in Sources */,
+				F69C7CBE27847729002DE124 /* UIViewExtensions.swift in Sources */,
 				F62D39882778E31500C365E5 /* ProfileTableVC.swift in Sources */,
 				F63F23522782D94900EFFB49 /* LocationMSG.swift in Sources */,
 				F68211CA27707AD8001CBBC6 /* User.swift in Sources */,
@@ -449,6 +470,7 @@
 				F6530FF7277D907100F3A002 /* MSGCellDelegate.swift in Sources */,
 				F68211CC27707CA2001CBBC6 /* FCollectionReferenc.swift in Sources */,
 				F63F23542782DFA400EFFB49 /* AudioRecorder.swift in Sources */,
+				F605030C278478F0001445F4 /* OnboardingSlide.swift in Sources */,
 				F62B554527784978004168F9 /* UsersTableVC.swift in Sources */,
 				F6196F212781C52400DABDDA /* PhotoMSG.swift in Sources */,
 				F682119C276F2830001CBBC6 /* LoginVC.swift in Sources */,
@@ -465,10 +487,12 @@
 				F658B7EE2779954300C8E3F1 /* ChatRoom.swift in Sources */,
 				F62B554327784951004168F9 /* UsersTableViewCell.swift in Sources */,
 				F6C48C8B2774623D0096EBD1 /* setingsTableVC.swift in Sources */,
+				F605030F27847C43001445F4 /* OnboardingCollectionViewCell.swift in Sources */,
 				F63F235A278309EC00EFFB49 /* AudioMSG.swift in Sources */,
 				F658B7F42779CE6C00C8E3F1 /* StartChat.swift in Sources */,
 				F6821198276F2830001CBBC6 /* AppDelegate.swift in Sources */,
 				F6531003277DEEB200F3A002 /* RealmManager.swift in Sources */,
+				F69C7CBC27844129002DE124 /* OnboardingVC.swift in Sources */,
 				F658B7F22779AD1C00C8E3F1 /* ChatRoomTableVC.swift in Sources */,
 				F61A5BD2277C6FF300709C52 /* MessageVC.swift in Sources */,
 				F633C94A2780BFC5006796B7 /* FTypingListener.swift in Sources */,
