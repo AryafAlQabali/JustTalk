@@ -12,8 +12,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     
+    
+    //Sign out or still in the app
     var authListener: AuthStateDidChangeListenerHandle?
 
+    
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
               guard let _ = (scene as? UIWindowScene) else { return }
         
@@ -46,6 +50,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
     }
+    
+    //
     func autoLogin(){
         authListener = Auth.auth().addStateDidChangeListener({ auth, user in
             Auth.auth().removeStateDidChangeListener(self.authListener!)

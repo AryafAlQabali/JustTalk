@@ -100,7 +100,7 @@ class setingsTableVC: UITableViewController {
     private func showUserInfo(){
         if let user = User.currentUser{
             usernameLblOutlet.text = user.username
-            statusLblOutlet.text = user.status
+            statusLblOutlet.text = user.status.localized
             
             
             if user.avatarLink != "" {
@@ -130,11 +130,11 @@ class setingsTableVC: UITableViewController {
     
     @IBAction func Language(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Error", message: "", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        let alert = UIAlertController(title: "You can change your language by going to your device settings.".localized, message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok".localized, style: .default, handler: nil))
         
         
-        let settings = UIAlertAction(title: "Settings", style: .default, handler: { (action) -> Void in
+        let settings = UIAlertAction(title: "See Settings".localized, style: .default, handler: { (action) -> Void in
 
             
             UIApplication.shared.open(URL(string: "App-Prefs:root=GENERAL")!, options: [:], completionHandler: nil)

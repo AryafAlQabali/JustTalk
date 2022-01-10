@@ -1,0 +1,147 @@
+
+/* Class = "UILabel"; text = "Status"; ObjectID = "2P3-2V-YOu"; */
+"2P3-2V-YOu.text" = "الحاله";
+
+/* Class = "UIButton"; configuration.title = "Language"; ObjectID = "4HG-37-shT"; */
+"4HG-37-shT.configuration.title" = "اللغه";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4HG-37-shT"; */
+"4HG-37-shT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "27/12/2021"; ObjectID = "5uw-ek-eM6"; */
+"5uw-ek-eM6.text" = "٢٧/١٢/٢٠٢١";
+
+/* Class = "UITabBarItem"; title = "Chat"; ObjectID = "88S-4c-I60"; */
+"88S-4c-I60.title" = "المحادثه";
+
+/* Class = "UIButton"; configuration.title = "Register"; ObjectID = "9lR-7V-faO"; */
+"9lR-7V-faO.configuration.title" = "تسجيل";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9lR-7V-faO"; */
+"9lR-7V-faO.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "username"; ObjectID = "AtJ-5Q-FV8"; */
+"AtJ-5Q-FV8.text" = "الاسم";
+
+/* Class = "UIButton"; configuration.title = "Resend email?"; ObjectID = "B3c-sI-k4D"; */
+"B3c-sI-k4D.configuration.title" = "إعادة إرسال البريد الإلكتروني؟";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "B3c-sI-k4D"; */
+"B3c-sI-k4D.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Users"; ObjectID = "Bei-nW-sp6"; */
+"Bei-nW-sp6.title" = "المستخدمين";
+
+/* Class = "UILabel"; text = "status"; ObjectID = "C2F-l3-1jZ"; */
+"C2F-l3-1jZ.text" = "الحاله";
+
+/* Class = "UITableViewSection"; headerTitle = "Section-1"; ObjectID = "CPo-zi-hSk"; */
+"CPo-zi-hSk.headerTitle" = "Section-1";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "CyO-gc-boD"; */
+"CyO-gc-boD.placeholder" = "الاسم";
+
+/* Class = "UIButton"; configuration.title = "Next"; ObjectID = "FeG-Qq-rL3"; */
+"FeG-Qq-rL3.configuration.title" = "التالي";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FeG-Qq-rL3"; */
+"FeG-Qq-rL3.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Start Chat"; ObjectID = "IEa-oE-hoP"; */
+"IEa-oE-hoP.text" = "بدء المحادثه";
+
+/* Class = "UILabel"; text = "Register"; ObjectID = "JaU-dG-cAj"; */
+"JaU-dG-cAj.text" = "تسجيل";
+
+/* Class = "UIButton"; configuration.title = "Forget Password"; ObjectID = "Jro-Gj-Mmf"; */
+"Jro-Gj-Mmf.configuration.title" = "هل نسيت كلمة المرور";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Jro-Gj-Mmf"; */
+"Jro-Gj-Mmf.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "username"; ObjectID = "KAn-tN-O4K"; */
+"KAn-tN-O4K.text" = "الاسم";
+
+/* Class = "UILabel"; text = "Confirm Password"; ObjectID = "Lg2-7c-Bgs"; */
+"Lg2-7c-Bgs.text" = "تأكيد كلمة المرور";
+
+/* Class = "UILabel"; text = "last message ,this is a long settence and have many words"; ObjectID = "MAB-Du-k5H"; */
+"MAB-Du-k5H.text" = "الرسالة الأخيرة ، هذه جملة طويلة وتحتوي على العديد من الكلمات";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "Nfc-ny-RPa"; */
+"Nfc-ny-RPa.placeholder" = "
+تأكيد كلمة المرور";
+
+/* Class = "UILabel"; text = "username"; ObjectID = "OpP-wS-Zym"; */
+"OpP-wS-Zym.text" = "الاسم";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Ref-Uz-DxL"; */
+"Ref-Uz-DxL.placeholder" = "كلمة المرور";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "S3E-CG-4Ry"; */
+"S3E-CG-4Ry.text" = "البريد الالكتروني";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Tzy-d7-rag"; */
+"Tzy-d7-rag.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "username"; ObjectID = "UHW-a0-SaF"; */
+"UHW-a0-SaF.text" = "الاسم";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "W0b-vZ-LQd"; */
+"W0b-vZ-LQd.title" = "الاعدادات";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "awA-FJ-TIj"; */
+"awA-FJ-TIj.text" = "١٠٠";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "b6q-nB-AIu"; */
+"b6q-nB-AIu.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "fQU-up-Ss8"; */
+"fQU-up-Ss8.title" = "الاعدادات";
+
+/* Class = "UILabel"; text = "status"; ObjectID = "jUd-Wa-kQz"; */
+"jUd-Wa-kQz.text" = "الحاله";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nEc-JH-Zx1"; */
+"nEc-JH-Zx1.text" = "Label";
+
+/* Class = "UILabel"; text = "Have an account?"; ObjectID = "npP-0i-ANa"; */
+"npP-0i-ANa.text" = "لديك حساب؟";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "qed-Yr-0jF"; */
+"qed-Yr-0jF.placeholder" = "البريد الالكتروني";
+
+/* Class = "UITabBarItem"; title = "Users"; ObjectID = "rQF-pC-Cqb"; */
+"rQF-pC-Cqb.title" = "المستخدمين";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "sQz-gf-fad"; */
+"sQz-gf-fad.configuration.title" = "تسجيل دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sQz-gf-fad"; */
+"sQz-gf-fad.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "status"; ObjectID = "sqn-OO-jSj"; */
+"sqn-OO-jSj.text" = "الحاله";
+
+/* Class = "UINavigationItem"; title = "Edit Profile"; ObjectID = "uIU-3a-9aU"; */
+"uIU-3a-9aU.title" = "تعديل الملف الشخصي";
+
+/* Class = "UINavigationItem"; title = "Chat"; ObjectID = "uhw-wk-NMg"; */
+"uhw-wk-NMg.title" = "محادثه";
+
+/* Class = "UILabel"; text = "Dark mode"; ObjectID = "wRV-rS-PWU"; */
+"wRV-rS-PWU.text" = "الوضع المظلم";
+
+/* Class = "UIButton"; configuration.title = "Log out"; ObjectID = "xN1-kM-9ns"; */
+"xN1-kM-9ns.configuration.title" = "تسجيل خروج";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xN1-kM-9ns"; */
+"xN1-kM-9ns.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "xlU-rt-Cl1"; */
+"xlU-rt-Cl1.text" = "كلمة مرور";
+
+/* Class = "UILabel"; text = "Change uesrname, image and  status"; ObjectID = "yQ0-xF-Hx1"; */
+"yQ0-xF-Hx1.text" = "تغيير اسم المستخدم والصورة والحالة";
+
+"2P3-2V-YOu.text" = "الحاله";

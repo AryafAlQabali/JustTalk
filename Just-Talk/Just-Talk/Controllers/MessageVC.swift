@@ -190,7 +190,7 @@ configureMSGCollectionView()
     
     private func configureCustomTitle() {
         
-        self.navigationItem.leftBarButtonItems = [UIBarButtonItem(image: UIImage(systemName: "chevron.left.2"), style: .plain, target: self, action: #selector(self.backButtonPresseed))]
+        self.navigationItem.leftBarButtonItems = [UIBarButtonItem(image: UIImage(systemName: "chevron.left".localized), style: .plain, target: self, action: #selector(self.backButtonPresseed))]
         
         
         leftBarButtonView.addSubview(titleLabel)
@@ -345,17 +345,17 @@ configureMSGCollectionView()
         
         let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
-        let takePhotoOrVideo = UIAlertAction(title: "Camera", style: .default) { (alert) in
+        let takePhotoOrVideo = UIAlertAction(title: "Camera".localized, style: .default) { (alert) in
             self.showImageGallery(camera: true)
 
         }
         
-        let shareMedia = UIAlertAction(title: "Library", style: .default) { (alert) in
+        let shareMedia = UIAlertAction(title: "Library".localized, style: .default) { (alert) in
             self.showImageGallery(camera: false)
           
         }
         
-        let shareLocation = UIAlertAction(title: "Show Location", style: .default) { (alert) in
+        let shareLocation = UIAlertAction(title: "Show Location".localized, style: .default) { (alert) in
       
             if let _ = LocationManager.shared.currentLocation {
                 self.send(text: nil, photo: nil, video: nil, audio: nil, location: kLOCATION)
@@ -364,10 +364,10 @@ configureMSGCollectionView()
             
         
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel".localized, style: .cancel, handler: nil)
         
-        takePhotoOrVideo.setValue(UIImage(systemName: "camera"), forKey: "image")
-        shareMedia.setValue(UIImage(systemName: "photo.fill"), forKey: "image")
+        takePhotoOrVideo.setValue(UIImage(systemName: "camera.fill"), forKey: "image")
+        shareMedia.setValue(UIImage(systemName: "photo.on.rectangle.angled"), forKey: "image")
         shareLocation.setValue(UIImage(systemName: "mappin.and.ellipse"), forKey: "image")
 //
         

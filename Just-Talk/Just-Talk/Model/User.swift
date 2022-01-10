@@ -8,7 +8,7 @@
 import Foundation
 import Firebase
 import FirebaseFirestoreSwift
-import UIKit
+
 
 
 struct User: Codable , Equatable {
@@ -58,6 +58,7 @@ struct User: Codable , Equatable {
 }
 func  saveUserLocally(_ user: User) {
     let ecoder = JSONEncoder()
+    //swift ---> jeson
     do {
     let data = try ecoder.encode(user)
     
@@ -68,32 +69,32 @@ func  saveUserLocally(_ user: User) {
     
     
 }
-    func createdummyusers() {
-        print("creating dummy users...")
-
-        let names = ["Arya","Jood","Hind", "Hadeel", "Ahlam"]
-
-        var imageIndex = 1
-        var userIndex = 1
-
-        for i in 0..<5 {
-
-            let id = UUID().uuidString
-            let fileDirctory = "Avatars/" + "_\(id)" + ".jpg"
-
-            FileStorage.uploadeImage(UIImage(named: "user\(imageIndex)")!, directory: fileDirctory) {
-                (avatarLink) in
-
-                let user = User(id: id, username: names[i], email:"user\(userIndex)@mail.com", pushld: "", avatarLink: avatarLink ?? "", status: "No Status")
-
-                userIndex += 1
-                FUserListener.shared.saveUserToFirestore(user)
-            }
-            imageIndex += 1
-            if imageIndex == 5 {
-                imageIndex = 1
-            }
-        }
-    }
+//    func createdummyusers() {
+//        print("creating dummy users...")
+//
+//        let names = ["Arya","Jood","Hind", "Hadeel", "Ahlam"]
+//
+//        var imageIndex = 1
+//        var userIndex = 1
+//
+//        for i in 0..<5 {
+//
+//            let id = UUID().uuidString
+//            let fileDirctory = "Avatars/" + "_\(id)" + ".jpg"
+//
+//            FileStorage.uploadeImage(UIImage(named: "user\(imageIndex)")!, directory: fileDirctory) {
+//                (avatarLink) in
+//
+//                let user = User(id: id, username: names[i], email:"user\(userIndex)@mail.com", pushld: "", avatarLink: avatarLink ?? "", status: "No Status")
+//
+//                userIndex += 1
+//                FUserListener.shared.saveUserToFirestore(user)
+//            }
+//            imageIndex += 1
+//            if imageIndex == 5 {
+//                imageIndex = 1
+//            }
+//        }
+//    }
 
 

@@ -22,9 +22,9 @@ class OnboardingVC: UIViewController {
         pageControl.currentPage = currentPage
 
         if currentPage == slides.count - 1 {
-            nextBtn.setTitle("Go started", for: .normal)
+            nextBtn.setTitle("Go started".localized, for: .normal)
         }else {
-            nextBtn.setTitle("Next", for: .normal)
+            nextBtn.setTitle("Next".localized, for: .normal)
         }
     }
     
@@ -33,17 +33,16 @@ class OnboardingVC: UIViewController {
         super.viewDidLoad()
         
         slides = [
-//            OnboardingSlide(title: "5555555", description: "66666666666", image:UIImage(named: "1")!),
-            OnboardingSlide(title: "chat", description: "keep in touch with old and and new friend, chitchat with them", image:UIImage(named: "2")!),
-            OnboardingSlide(title: "Share", description: "Eshare photos, video, audio and everything you want", image:UIImage(named: "3")!),
-            OnboardingSlide(title: "Hello, Friend!", description: "Enter your personal details and start journey with us", image:UIImage(named: "4")!)
 
+            OnboardingSlide(title: "Chat".localized, description: "keep in touch with old and and new friend, chitchat with them".localized, image:UIImage(named: "2")!),
+            OnboardingSlide(title: "Share".localized, description: "Eshare photos, video, audio and everything you want".localized, image:UIImage(named: "3")!),
+            OnboardingSlide(title: "Welcome".localized, description: "Enter your personal information and start journey with us".localized, image:UIImage(named: "4")!)
 
         ]
         
 
-        collectionView.delegate = self
-        collectionView.dataSource = self
+//        collectionView.delegate = self
+//        collectionView.dataSource = self
 
 
     }

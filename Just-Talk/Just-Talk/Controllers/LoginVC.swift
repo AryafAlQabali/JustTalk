@@ -18,10 +18,10 @@ class LoginVC: UIViewController {
         passwordLblOutlet.text = ""
         confirmPasswordLblOutlet.text = ""
         
-        emailTextFieldOutlet.delegate = self
-        passwordTextFieldOutlet.delegate = self
-        confirmPasswordTextFieldOutlet.delegate = self
-        
+//        emailTextFieldOutlet.delegate = self
+//        passwordTextFieldOutlet.delegate = self
+//        confirmPasswordTextFieldOutlet.delegate = self
+//
         setupBagroundTap()
         
         let email = UIImage(named: "email")
@@ -41,24 +41,29 @@ class LoginVC: UIViewController {
     
 //MARK:- IBOutlets
     
-    //Labels
+   
     @IBOutlet weak var titleOutlet: UILabel!
     @IBOutlet weak var emailLblOutlet: UILabel!
     @IBOutlet weak var passwordLblOutlet: UILabel!
     @IBOutlet weak var confirmPasswordLblOutlet: UILabel!
-    
     @IBOutlet weak var haveAnAccountOutlet: UILabel!
     
     
-    //TextField
+    
+    
+   
     @IBOutlet weak var emailTextFieldOutlet: UITextField!
     @IBOutlet weak var passwordTextFieldOutlet: UITextField!
     @IBOutlet weak var confirmPasswordTextFieldOutlet: UITextField!
     
     
-    //Button Outlets
+    
+    
+    
+   
     @IBOutlet weak var forgetPasswordOutlet: UIButton!
     @IBOutlet weak var resendEmailOutlet: UIButton!
+   
     @IBOutlet weak var registerOutlet: UIButton!
     @IBOutlet weak var loginOutlet: UIButton!
     
@@ -114,21 +119,21 @@ class LoginVC: UIViewController {
     private func updateUIMode(mode: Bool) {
         
         if !mode {
-            titleOutlet.text = "Login"
+            titleOutlet.text = "Login".localized
             confirmPasswordLblOutlet.isHidden = true
             confirmPasswordTextFieldOutlet.isHidden = true
-            registerOutlet.setTitle("Login", for: .normal)
-            loginOutlet.setTitle("Register", for: .normal)
-            haveAnAccountOutlet.text = "New here?"
+            registerOutlet.setTitle("Login".localized, for: .normal)
+            loginOutlet.setTitle("Register".localized, for: .normal)
+            haveAnAccountOutlet.text = "Don't have an account?".localized
             forgetPasswordOutlet.isHidden = false
             resendEmailOutlet.isHidden = true
         } else {
-            titleOutlet.text = "Register"
+            titleOutlet.text = "Register".localized
             confirmPasswordLblOutlet.isHidden = false
             confirmPasswordTextFieldOutlet.isHidden = false
-            registerOutlet.setTitle("Register", for: .normal)
-            loginOutlet.setTitle("Login", for: .normal)
-            haveAnAccountOutlet.text = "Have an account?"
+            registerOutlet.setTitle("Register".localized, for: .normal)
+            loginOutlet.setTitle("Login".localized, for: .normal)
+            haveAnAccountOutlet.text = "Already have account?".localized
             resendEmailOutlet.isHidden = false
             forgetPasswordOutlet.isHidden = true
           
@@ -264,14 +269,14 @@ class LoginVC: UIViewController {
 
 
 //MARK:- UI Text Delegate
-
-extension LoginVC: UITextFieldDelegate {
-    func textFieldDidChangeSelection(_ textField: UITextField) {
-        emailLblOutlet.text = emailTextFieldOutlet.hasText ? "Email" : ""
-        passwordLblOutlet.text = passwordTextFieldOutlet.hasText ? "Password" : ""
-        confirmPasswordLblOutlet.text = confirmPasswordTextFieldOutlet.hasText ? "confirm Password" : ""
-        
-    }
-}
+//
+//extension LoginVC: UITextFieldDelegate {
+//    func textFieldDidChangeSelection(_ textField: UITextField) {
+//        emailLblOutlet.text = emailTextFieldOutlet.hasText ? "Email" : ""
+//        passwordLblOutlet.text = passwordTextFieldOutlet.hasText ? "Password" : ""
+//        confirmPasswordLblOutlet.text = confirmPasswordTextFieldOutlet.hasText ? "confirm Password" : ""
+//
+//    }
+//}
 
 

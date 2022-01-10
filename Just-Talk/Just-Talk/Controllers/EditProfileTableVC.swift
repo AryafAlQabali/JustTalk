@@ -77,7 +77,7 @@ class EditProfileTableVC: UITableViewController {
         if let user = User.currentUser {
             
             usernameTextFieldOutlet.text = user.username
-            statusLabOutlet.text = user.status
+            statusLabOutlet.text = user.status.localized
         
             
             

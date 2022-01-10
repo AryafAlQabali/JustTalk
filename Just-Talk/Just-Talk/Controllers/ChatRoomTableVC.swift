@@ -40,7 +40,7 @@ class ChatRoomTableVC: UITableViewController {
         navigationItem.hidesSearchBarWhenScrolling = true
         
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Searcch Users"
+        searchController.searchBar.placeholder = "Searcch Users".localized
         definesPresentationContext = true
         searchController.searchResultsUpdater = self
         

@@ -1,0 +1,56 @@
+/* 
+  Localizable.strings
+  Just-Talk
+
+  Created by AryafAlaqabali on 07/06/1443 AH.
+  
+*/
+
+"" = "";
+
+"Login" = "تسجيل دخول";
+"Register" = "تسجيل";
+"Don't have an account?" = "ليس لديك حساب؟";
+"Already have account?" = "لديك حساب بالفعل؟";
+
+
+
+"Available" = "متاح";
+"Busy" = "مشغول";
+"sleeping" = "نائم";
+"At School" = "في المدرسه";
+"At The Movies" = "";
+"At Work" = "في العمل";
+"In a Meeting" = "في الاجتماع";
+"Can't Talk" = "لا أستطيع التحدث";
+
+
+"Searcch Users" = "البحث عن المستخدمين";
+"Typing..." = "
+كتابة";
+
+"Camera" = "كاميرا";
+"Library" = "مكتبة الصور";
+"Show Location" = " الموقع";
+"Cancel" = "إنهاء";
+"chevron.left" = "chevron.right";
+
+
+
+"You can change your language by going to your device settings." = "يمكنك تغيير لغتك بالذهاب إلى إعدادات جهازك";
+
+"Ok" = "حسناً";
+"See Settings" = "انظر للاعدادات";
+
+
+"Go started" = "ابدا" ;
+"Next" = "التالي";
+
+"Chat" = "المحادثه";
+"keep in touch with old and and new friend, chitchat with them" = "ابق على اتصال مع الأصدقاء القدامى والجدد ، وتحدث معهم";
+
+"Share" = "شارك";
+"Eshare photos, video, audio and everything you want" = "شارك الصور والفيديو والصوت وكل ما تريد";
+
+"Welcome" = "اهلاً بك";
+"Enter your personal information and start journey with us" = "أدخل معلوماتك الشخصية وابدأ الرحلة معنا";
