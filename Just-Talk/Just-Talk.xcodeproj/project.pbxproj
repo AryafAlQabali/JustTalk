@@ -390,6 +390,7 @@
 				F68211BC276F2C8B001CBBC6 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				F68211C1276F2DD4001CBBC6 /* XCRemoteSwiftPackageReference "MessageKit" */,
 				F68211C4276F2E10001CBBC6 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */,
+				F63234952792FB6000388767 /* XCRemoteSwiftPackageReference "Switch-Animations" */,
 			);
 			productRefGroup = F6821195276F2830001CBBC6 /* Products */;
 			projectDirPath = "";
@@ -748,6 +749,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F63234952792FB6000388767 /* XCRemoteSwiftPackageReference "Switch-Animations" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jwd-ali/Switch-Animations.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		F68211AF276F299E001CBBC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";

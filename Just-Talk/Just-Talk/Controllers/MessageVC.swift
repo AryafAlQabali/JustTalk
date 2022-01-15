@@ -165,7 +165,6 @@ configureMSGCollectionView()
         
         
         
-        //تمنع المستخدم ليقوم ب بيست لل امج داخل المسج لل فيو
         messageInputBar.inputTextView.isImagePasteEnabled = false
         messageInputBar.backgroundView.backgroundColor = .systemBackground
         messageInputBar.inputTextView.backgroundColor = .systemBackground
@@ -177,7 +176,6 @@ configureMSGCollectionView()
     
     
     //Long Press configuration
-    
     private func configureGestureRecognizer() {
         
         longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(recordAndSend))
@@ -215,8 +213,8 @@ configureMSGCollectionView()
 
     }
     
+    
     //MARK:- MarkMessageAs read
-   
    private func markMessageAsRead(_ localMSG: LocalMSG) {
        if localMSG.senderId != User.currentId {
            FMessageListener.shared.updateMessageStatus(localMSG, userId: recipientId)
@@ -228,7 +226,6 @@ configureMSGCollectionView()
     
     
     //MARK:- Update typing indicator
-   
    func updateTypingIndicator(_ show: Bool) {
        
        subTitleLabel.text = show ? "Typing...".localized : ""
@@ -326,17 +323,7 @@ configureMSGCollectionView()
     
     }
     
-    
-    
-    
-    
-    
-//    __________________________________________________________________
-//    _________________________________________________________________
-    
-    
-    
-    
+
     
     
     private func actionAttachMessage() {
@@ -403,7 +390,6 @@ configureMSGCollectionView()
 
     
     //MARK:- Load Messages
-   
    private func loadMessages() {
        
        let predicate = NSPredicate(format: "chatRoomId = %@", chatId)
@@ -448,6 +434,7 @@ configureMSGCollectionView()
     private func insertMKMessage(LocalMSG: LocalMSG) {
         markMessageAsRead(LocalMSG)
 //        markMessageAsRead(LocalMSG)
+        
         let incoming = Incoming(messageViewController: self)
         let mkMessage = incoming.createMKMessage(LocalMSG: LocalMSG)
         self.mkMessages.append(mkMessage)

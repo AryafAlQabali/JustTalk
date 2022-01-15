@@ -14,7 +14,6 @@ class LocalMSG : Object, Codable{
     @objc dynamic var chatRoomId = ""
     @objc dynamic var date = Date()
     @objc dynamic var sederName = ""
-//    @objc dynamic  var sentDate = Date()
     @objc dynamic  var senderId = ""
     @objc dynamic var senderinitials = ""
     @objc dynamic  var readDate = Date()

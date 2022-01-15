@@ -25,7 +25,7 @@
 "Can't Talk" = "لا أستطيع التحدث";
 
 
-"Searcch Users" = "البحث عن المستخدمين";
+"Search Users" = "البحث عن المستخدمين";
 "Typing..." = "
 كتابة";
 
@@ -102,3 +102,8 @@
 "Confirm Password" = "تأكيد كلمة المرور";
  "Welcome Back!" = "مرحباً بك !";
 "Create Account" = "تسجيل";
+
+"The application will be restarted" = "سيتم إعادة تشغيل التطبيق";
+"Choose your preferred language" = "اختر لغتك المفضلة";
+"Einglish" = "الانجليزيه";
+"Arabic" = "العربيه";

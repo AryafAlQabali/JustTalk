@@ -10,9 +10,7 @@ import UIKit
 class OnboardingVC: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
     @IBOutlet weak var nextBtn: UIButton!
-    
     @IBOutlet weak var pageControl: UIPageControl!
     
     var slides : [OnboardingSlide] = []
@@ -40,9 +38,6 @@ class OnboardingVC: UIViewController {
 
         ]
         
-
-//        collectionView.delegate = self
-//        collectionView.dataSource = self
 
 
     }

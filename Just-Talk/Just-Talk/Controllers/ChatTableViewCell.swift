@@ -10,12 +10,6 @@ import UIKit
 class ChatTableViewCell: UITableViewCell {
 
     
-    
-    
-    
-    
-    
-    
     //MARK:- IBOutlets
     @IBOutlet weak var avatarImgOutlet: UIImageView!
     @IBOutlet weak var usernameLblOutlet: UILabel!

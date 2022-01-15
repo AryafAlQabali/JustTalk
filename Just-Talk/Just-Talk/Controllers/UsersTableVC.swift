@@ -22,8 +22,7 @@ class UsersTableVC: UITableViewController {
         super.viewDidLoad()
         
         
-//        allUsers = [User.currentUser!]
-//        createdummyusers()
+
         
         tableView.tableFooterView = UIView()
         downloadUsers()
@@ -81,11 +80,7 @@ class UsersTableVC: UITableViewController {
     }
     
     
-//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let headerView = UIView()
-//        headerView.backgroundColor = UIColor(named: "ColorTableView")
-//        return headerView
-//    }
+
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

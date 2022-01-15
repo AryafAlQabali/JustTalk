@@ -45,9 +45,6 @@ class ProfileTableVC: UITableViewController {
         }
     }
     
-//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return section == 0 ? 0.0 :5.0
-//    }
     
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -56,7 +53,7 @@ class ProfileTableVC: UITableViewController {
         return headerView
     }
     
-    //
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.section == 1 {

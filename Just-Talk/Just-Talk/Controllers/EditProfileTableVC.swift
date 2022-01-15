@@ -48,19 +48,7 @@ class EditProfileTableVC: UITableViewController {
     
     
     
-    
-    // MARK: - Table view data source
-    
-//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return section == 0  || section == 1 ? 0.0 :30.0
-//    }
-    
-    
-//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let headerView = UIView()
-//        headerView.backgroundColor = UIColor(named: "ColorTableView")
-//        return headerView
-//    }
+  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 2 && indexPath.row == 0 {
             performSegue(withIdentifier: "editProfileToStatusSegue", sender: self)

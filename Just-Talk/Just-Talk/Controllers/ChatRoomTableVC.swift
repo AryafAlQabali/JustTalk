@@ -19,8 +19,6 @@ class ChatRoomTableVC: UITableViewController {
         
     }
     
-    
-    
     //MARK:- Vars
     var allChatRooms:[ChatRoom] = []
     var filteredChatRooms:[ChatRoom] = []
@@ -40,7 +38,7 @@ class ChatRoomTableVC: UITableViewController {
         navigationItem.hidesSearchBarWhenScrolling = true
         
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Searcch Users".localized
+        searchController.searchBar.placeholder = "Search Users".localized
         definesPresentationContext = true
         searchController.searchResultsUpdater = self
         
@@ -70,16 +68,12 @@ class ChatRoomTableVC: UITableViewController {
         
         
         
-//
-//        let chatRoom = ChatRoom(id: "123", chatRoomId: "123", senderId: "123", senderName: "Azhar", receiverId: "123", receiverName: "Aljrboa", date: Date(), memberId: [""], lastMessage: "Hello zozh , how are you? ", unreadCounter: 1, avaterLink: "")
-//
+
         cell.configureCell(chatRoom: searchController.isActive ? filteredChatRooms[indexPath.row] :  allChatRooms[indexPath.row])
     return cell
     }
 
-//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 100.0
-//    }
+
     
     //MARK:- TableView Delegation function (Delete)
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

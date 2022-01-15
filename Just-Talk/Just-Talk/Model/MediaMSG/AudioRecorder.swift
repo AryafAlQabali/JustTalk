@@ -7,7 +7,7 @@
 
 import Foundation
 import AVFoundation
-// مازبطت
+
 
 class AudioRecorder: NSObject, AVAudioRecorderDelegate {
     

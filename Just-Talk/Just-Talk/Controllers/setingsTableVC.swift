@@ -13,17 +13,10 @@ class setingsTableVC: UITableViewController {
     //MARK:- IBOutlets
     
     @IBOutlet weak var imageOutlet: UIImageView!
-    
     @IBOutlet weak var usernameLblOutlet: UILabel!
-    
     @IBOutlet weak var statusLblOutlet: UILabel!
     
-    
-    
-    
-    
-    
-    
+
     
     //MARK:- Lifecycle of table view
 
@@ -31,7 +24,7 @@ class setingsTableVC: UITableViewController {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
       
-       
+      
 
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -69,19 +62,8 @@ class setingsTableVC: UITableViewController {
     }
     
     
-    //MARK:- Table Delegates
-//    
-//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        
-//        let headerView = UIView()
-//        headerView.backgroundColor = UIColor(named: "ColorTableView")
-//        return headerView
-//    }
-    
-//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return section == 0 ? 0.0: 10.0
-//
-//    }
+
+ 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 && indexPath.row == 0 {
             
@@ -110,9 +92,10 @@ class setingsTableVC: UITableViewController {
             }
         }
     }
-
+ 
     
-    @IBAction func darkAndLight(_ sender: Any) {
+    @IBAction func darkAndLight(_ sender: UISwitch) {
+      
         if #available(iOS 13.0, *){
             let appDelegate = UIApplication.shared.windows.first
             if (sender as AnyObject).isOn {
@@ -125,24 +108,23 @@ class setingsTableVC: UITableViewController {
     }
     
     @IBAction func Language(_ sender: Any) {
-        if let appSettings = URL(string: UIApplication.openSettingsURLString), UIApplication.shared.canOpenURL(appSettings) {
-           UIApplication.shared.open(appSettings)
-         }
-//        let alert = UIAlertController(title: "You can change your language by going to your device settings.".localized, message: "", preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "Ok".localized, style: .default, handler: nil))
-//
-//
-//        let settings = UIAlertAction(title: "See Settings".localized, style: .default, handler: { (action) -> Void in
-//
-//
-//            UIApplication.shared.open(URL(string: "App-Prefs:root=GENERAL")!, options: [:], completionHandler: nil)
-//
-//        })
-//
-//        alert.addAction(settings)
-//        self.present(alert, animated: true, completion: nil)
-    }
-    
+        let chengelangu = UIAlertController(title: NSLocalizedString("The application will be restarted".localized, comment: ""), message: NSLocalizedString( "Choose your preferred language".localized,comment: ""), preferredStyle: .actionSheet)
+        chengelangu.addAction(UIAlertAction(title: "Einglish".localized, style: .default, handler: { action in
+              let currentlang = Locale.current.languageCode
+              let newLanguage = currentlang == "en" ? "ar" : "en"
+              UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
+              exit(0)
+            }))
+        chengelangu.addAction(UIAlertAction(title: "Arabic".localized, style: .default, handler: {action in
+              let currentlang = Locale.current.languageCode
+              let newLanguage = currentlang == "en" ? "ar" : "ar"
+              UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
+              exit(0)
+            }))
+        chengelangu.addAction(UIAlertAction(title:NSLocalizedString("Cancel".localized, comment: ""), style: .cancel, handler: nil))
+            present(chengelangu, animated: true, completion: nil)
+          }
+
     
     
     
