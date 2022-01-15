@@ -24,16 +24,9 @@ An instant messaging application that can be used on iPhones, with which you can
 - Dark mode support
 - Supports changing the language
 
-
-## Backlog
-
-User profile:
-- See profile
-- Sign out
-- Change the picture
-
 ## Components :
 
-- Login page
-- Register page 
-- Profile page
+- Login and Register page 
+- Settings page
+- Chat page
+- Users page
