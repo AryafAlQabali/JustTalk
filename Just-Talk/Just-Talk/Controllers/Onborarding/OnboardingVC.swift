@@ -34,9 +34,9 @@ class OnboardingVC: UIViewController {
         
         slides = [
 
-            OnboardingSlide(title: "Chat".localized, description: "keep in touch with old and and new friend, chitchat with them".localized, image:UIImage(named: "2")!),
-            OnboardingSlide(title: "Share".localized, description: "Eshare photos, video, audio and everything you want".localized, image:UIImage(named: "3")!),
-            OnboardingSlide(title: "Welcome".localized, description: "Enter your personal information and start journey with us".localized, image:UIImage(named: "4")!)
+            OnboardingSlide(title: "Chat".localized, description: "keep in touch with old and and new friend, chitchat with them".localized, image:UIImage(named: "Chat")!),
+            OnboardingSlide(title: "Share".localized, description: "Eshare photos, video, audio and everything you want".localized, image:UIImage(named: "Share")!),
+            OnboardingSlide(title: "Welcome".localized, description: "Enter your personal information and start journey with us".localized, image:UIImage(named: "Welcome")!)
 
         ]
         

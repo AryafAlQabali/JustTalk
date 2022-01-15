@@ -72,7 +72,7 @@ class FUserListener {
                 }
             }
             if authResults?.user != nil {
-                let user = User(id: authResults!.user.uid, username: email, email: email, pushld: "", avatarLink: "", status: " Hi!")
+                let user = User(id: authResults!.user.uid, username: email, email: email, pushld: "", avatarLink: "", status: " Hi!".localized)
                 
                 
                 

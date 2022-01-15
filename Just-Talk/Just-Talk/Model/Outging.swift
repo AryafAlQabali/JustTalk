@@ -80,7 +80,7 @@ class Outgoing {
 
 
 func sendPhoto(message: LocalMSG, photo: UIImage, memberIds: [String]) {
-    message.message = "Photo Message"
+    message.message = "Photo Message".localized
     message.type = kPHOTO
     
     
@@ -101,7 +101,7 @@ func sendPhoto(message: LocalMSG, photo: UIImage, memberIds: [String]) {
 
 
 func sendVideo(message: LocalMSG, video: Video, memberIds:[String]) {
-    message.message = "Video Message"
+    message.message = "Video Message".localized
     message.type = kVIDEO
     
     
@@ -146,7 +146,7 @@ func sendLocation(message: LocalMSG, memberIds: [String]) {
     
     let currentLocation = LocationManager.shared.currentLocation
     
-    message.message = "Location Message"
+    message.message = "Location Message".localized
     message.type = kLOCATION
     message.latitude = currentLocation?.latitude ?? 0.0
     message.longitude = currentLocation?.longitude ?? 0.0
@@ -157,7 +157,7 @@ func sendLocation(message: LocalMSG, memberIds: [String]) {
 
 func sendAudio(message: LocalMSG, audioFileName: String, audioDuration: Float, memberIds: [String]) {
    
-    message.message = "Audio Message"
+    message.message = "Audio Message".localized
     message.type = kAUDIO
     let fileDirectory = "MediaMessages/Audio/" + "\(message.chatRoomId)" + "_\(audioFileName)" + ".m4a"
     

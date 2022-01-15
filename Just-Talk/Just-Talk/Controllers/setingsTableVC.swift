@@ -8,6 +8,7 @@
 import UIKit
 
 class setingsTableVC: UITableViewController {
+    
 
     //MARK:- IBOutlets
     
@@ -44,12 +45,7 @@ class setingsTableVC: UITableViewController {
     
     
     //MARK:- IBActions
-    @IBAction func tellFriendButPressed(_ sender: UIButton) {
-        print("tell a friend")
-    }
-    @IBAction func termsButPressed(_ sender: UIButton) {
-        print("terms and conditions")
-    }
+   
     
     @IBAction func logoutButPressed(_ sender: UIButton) {
 
@@ -74,13 +70,13 @@ class setingsTableVC: UITableViewController {
     
     
     //MARK:- Table Delegates
-    
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-        let headerView = UIView()
-        headerView.backgroundColor = UIColor(named: "ColorTableView")
-        return headerView
-    }
+//    
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        
+//        let headerView = UIView()
+//        headerView.backgroundColor = UIColor(named: "ColorTableView")
+//        return headerView
+//    }
     
 //    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
 //        return section == 0 ? 0.0: 10.0
@@ -129,23 +125,44 @@ class setingsTableVC: UITableViewController {
     }
     
     @IBAction func Language(_ sender: Any) {
-        
-        let alert = UIAlertController(title: "You can change your language by going to your device settings.".localized, message: "", preferredStyle: .alert)
+        if let appSettings = URL(string: UIApplication.openSettingsURLString), UIApplication.shared.canOpenURL(appSettings) {
+           UIApplication.shared.open(appSettings)
+         }
+//        let alert = UIAlertController(title: "You can change your language by going to your device settings.".localized, message: "", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "Ok".localized, style: .default, handler: nil))
+//
+//
+//        let settings = UIAlertAction(title: "See Settings".localized, style: .default, handler: { (action) -> Void in
+//
+//
+//            UIApplication.shared.open(URL(string: "App-Prefs:root=GENERAL")!, options: [:], completionHandler: nil)
+//
+//        })
+//
+//        alert.addAction(settings)
+//        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    
+    
+   
+    @IBAction func privacyPolicy(_ sender: Any) {
+    
+        let alert = UIAlertController(title: "If you require more information or have any questions about the Privacy Policy, please feel free to contact us via the following email: aryafalq4@gmail.com ".localized, message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok".localized, style: .default, handler: nil))
         
         
-        let settings = UIAlertAction(title: "See Settings".localized, style: .default, handler: { (action) -> Void in
+        let settings = UIAlertAction(title: "Privacy Policy".localized, style: .default, handler: { (action) -> Void in
 
             
-            UIApplication.shared.open(URL(string: "App-Prefs:root=GENERAL")!, options: [:], completionHandler: nil)
+            UIApplication.shared.open(URL(string: "https://www.termsfeed.com/live/246d14d2-af78-4616-b064-13fe64ef3443")!, options: [:], completionHandler: nil)
             
         })
         
         alert.addAction(settings)
         self.present(alert, animated: true, completion: nil)
+    
     }
-    
-    
-    
 }
 

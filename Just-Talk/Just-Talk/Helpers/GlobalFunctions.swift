@@ -24,11 +24,11 @@ func timeElapsed (_ date: Date) -> String {
     var elapsed = ""
     
     if seconds < 60 {
-        elapsed = "Just now"
+        elapsed = "Just now".localized
     }
     else if seconds < 60 * 60 {
         let minutes = Int(seconds/60)
-        let minText = minutes > 1 ? "mins" : "min"
+        let minText = minutes > 1 ? "mins".localized : "min"
         elapsed = "\(minutes) \(minText)"
     }
     else {

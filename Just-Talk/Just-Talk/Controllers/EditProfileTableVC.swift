@@ -56,11 +56,11 @@ class EditProfileTableVC: UITableViewController {
 //    }
     
     
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        headerView.backgroundColor = UIColor(named: "ColorTableView")
-        return headerView
-    }
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let headerView = UIView()
+//        headerView.backgroundColor = UIColor(named: "ColorTableView")
+//        return headerView
+//    }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 2 && indexPath.row == 0 {
             performSegue(withIdentifier: "editProfileToStatusSegue", sender: self)
@@ -86,8 +86,7 @@ class EditProfileTableVC: UITableViewController {
                 FileStorage.downloadImage(imageUrl: user.avatarLink) { (avatarImage) in
                     self.avatarImageViewOutlet.image = avatarImage?.circleMasked
                 }
-                
-                //ما تنسيهاش
+    
         }
     }
 }
@@ -181,7 +180,7 @@ extension EditProfileTableVC:  GalleryControllerDelegate {
                     
                     self.avatarImageViewOutlet.image = imagePerson
                 }else{
-                    ProgressHUD.showError("Could not select imageb")
+                    ProgressHUD.showError("Could not select image".localized)
                 }
             }
         }

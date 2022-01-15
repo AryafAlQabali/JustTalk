@@ -42,6 +42,9 @@
 "Ok" = "حسناً";
 "See Settings" = "انظر للاعدادات";
 
+"If you require more information or have any questions about the Privacy Policy, please feel free to contact us via the following email: aryafalq4@gmail.com " = "إذا كنت بحاجة إلى مزيد من المعلومات أو لديك أي أسئلة حول سياسة الخصوصية ، فلا تتردد في الاتصال بنا عبر البريد الإلكتروني التالي: aryafalq4@gmail.com";
+
+"Privacy Policy" = "سياسة الخصوصية" ;
 
 "Go started" = "ابدا" ;
 "Next" = "التالي";
@@ -54,3 +57,48 @@
 
 "Welcome" = "اهلاً بك";
 "Enter your personal information and start journey with us" = "أدخل معلوماتك الشخصية وابدأ الرحلة معنا";
+
+
+"Video Message" = "مقطع فيديو";
+"Location Message" = "الموقع";
+"Audio Message" = "تسجيل الصوت";
+"Photo Message" = "صورة";
+
+"Just now" = "الآن";
+
+
+"Please check your email and verify your registraion" = "يرجى التحقق من بريدك الإلكتروني والتحقق من تسجيلك";
+
+"Verification email sent successfully" = "تم إرسال البريد الإلكتروني للتحقق بنجاح";
+
+"Verification email sent, please verify your email and confirm the registeratio" = "تم إرسال رسالة التحقق ، يرجى التحقق من بريدك الإلكتروني وتأكيد التسجيل";
+
+"Reset password email has email been sent" = "تم إرسال بريد إلكتروني لإعادة تعيين كلمة المرور";
+
+"All fields are required" = "جميع الحقول مطلوبة";
+
+"Could not select image" = "تعذر تحديد الصورة";
+
+"Typing..." = "يكتب...";
+
+//"dd MM yyyy" = "" ;
+//"ddMMyyyyHHmmss" = "";
+"HH:mm" = "";
+
+"Hi!" = "هاي!";
+"mins" = "دقيقه";
+
+
+"There is no user record corresponding to this identifier.The user may have been deleted" = "لا يوجد سجل مستخدم مطابق لهذا المعرف. ربما تم حذف المستخدم";
+
+"The email address or password is incorrect" = "عنوان البريد الإلكتروني أو كلمة المرور غير صحيحة";
+
+"We have blocked all requests from this device due to unusual activity. try again later" = "لقد حظرنا جميع الطلبات الواردة من هذا الجهاز بسبب نشاط غير عادي. حاول مرة أخرى في وقت لاحق";
+
+"Incorrect email or wrong password" = "بريد إلكتروني غير صحيح أو كلمة مرور خاطئة";
+
+"Email" = "البريد الالكتروني";
+"Password" = "كلمة المرور";
+"Confirm Password" = "تأكيد كلمة المرور";
+ "Welcome Back!" = "مرحباً بك !";
+"Create Account" = "تسجيل";

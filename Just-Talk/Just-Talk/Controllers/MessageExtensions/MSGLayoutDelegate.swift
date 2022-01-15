@@ -14,12 +14,6 @@ extension MessageVC: MessagesLayoutDelegate {
     
      //MARK:- Cell top label height
 
-    
-    //ما زبطت 
-    
-    
-    
-    
 
     func cellTopLabelHeight(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> CGFloat {
         if indexPath.section % 3 == 0 {

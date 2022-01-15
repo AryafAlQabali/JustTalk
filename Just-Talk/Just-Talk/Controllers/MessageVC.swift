@@ -160,7 +160,7 @@ configureMSGCollectionView()
         messageInputBar.setLeftStackViewWidthConstant(to: 36, animated: false)
         
         //TODO:- Update mic But status
-        updateMicButStatus(show: true)
+        updateMicBtnStatus(show: true)
         
         
         
@@ -231,7 +231,7 @@ configureMSGCollectionView()
    
    func updateTypingIndicator(_ show: Bool) {
        
-       subTitleLabel.text = show ? "Typing..." : ""
+       subTitleLabel.text = show ? "Typing...".localized : ""
    
    }
     
@@ -269,7 +269,7 @@ configureMSGCollectionView()
     }
 
     
-    func updateMicButStatus (show: Bool) {
+    func updateMicBtnStatus (show: Bool) {
         if show {
             messageInputBar.setStackViewItems([micBut], forStack: .right, animated: false)
             messageInputBar.setRightStackViewWidthConstant(to: 30, animated: false)
@@ -359,6 +359,7 @@ configureMSGCollectionView()
       
             if let _ = LocationManager.shared.currentLocation {
                 self.send(text: nil, photo: nil, video: nil, audio: nil, location: kLOCATION)
+              //  self.view.backgroundColor = UIColor.blue
             }
         }
             

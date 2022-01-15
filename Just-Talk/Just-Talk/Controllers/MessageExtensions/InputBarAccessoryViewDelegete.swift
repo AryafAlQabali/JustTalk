@@ -14,7 +14,7 @@ extension MessageVC: InputBarAccessoryViewDelegate {
     
     func inputBar(_ inputBar: InputBarAccessoryView, textViewTextDidChangeTo text: String) {
         print("Typing", text)
-        updateMicButStatus(show: text == "")
+        updateMicBtnStatus(show: text == "")
         
         if text != "" {
             startTypingIndicator()

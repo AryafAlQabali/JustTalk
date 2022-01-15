@@ -72,6 +72,9 @@
 "Nfc-ny-RPa.placeholder" = "
 تأكيد كلمة المرور";
 
+"Nfc-ny-RPa.placeholder" = "تاكيد كلمة المرور";
+
+
 /* Class = "UILabel"; text = "username"; ObjectID = "OpP-wS-Zym"; */
 "OpP-wS-Zym.text" = "الاسم";
 
@@ -130,7 +133,7 @@
 "uhw-wk-NMg.title" = "محادثه";
 
 /* Class = "UILabel"; text = "Dark mode"; ObjectID = "wRV-rS-PWU"; */
-"wRV-rS-PWU.text" = "الوضع المظلم";
+"wRV-rS-PWU.text" = "الوضع الليلي";
 
 /* Class = "UIButton"; configuration.title = "Log out"; ObjectID = "xN1-kM-9ns"; */
 "xN1-kM-9ns.configuration.title" = "تسجيل خروج";
@@ -145,3 +148,11 @@
 "yQ0-xF-Hx1.text" = "تغيير اسم المستخدم والصورة والحالة";
 
 "2P3-2V-YOu.text" = "الحاله";
+
+"giC-fZ-KAr.configuration.title" = "سياسة الخصوصية";
+
+"jOe-JW-Eaa.configuration.title" = "تسجيل خروج";
+ 
+"Tzy-d7-rag.configuration.title" = "تعديل";
+
+
