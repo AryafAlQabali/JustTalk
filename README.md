@@ -24,9 +24,6 @@ An instant messaging application that can be used on iPhones, with which you can
 - Dark mode support
 - Supports changing the language
 
-## Components :
 
-- Login and Register page 
-- Settings page
-- Chat page
-- Users page
+## Define the scenes:
+https://www.figma.com/file/sG7C4vwD02WqehlLkBfgLm/Untitled?node-id=0%3A1
