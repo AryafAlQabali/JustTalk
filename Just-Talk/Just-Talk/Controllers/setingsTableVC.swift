@@ -74,7 +74,6 @@ class setingsTableVC: UITableViewController {
     
     
     //MARK:- Update UI
-    
     private func showUserInfo(){
         if let user = User.currentUser{
             usernameLblOutlet.text = user.username
@@ -94,18 +93,7 @@ class setingsTableVC: UITableViewController {
     }
  
     
-    @IBAction func darkAndLight(_ sender: UISwitch) {
-      
-        if #available(iOS 13.0, *){
-            let appDelegate = UIApplication.shared.windows.first
-            if (sender as AnyObject).isOn {
-                appDelegate?.overrideUserInterfaceStyle = .dark
-                return
-            }
-            appDelegate?.overrideUserInterfaceStyle = .light
-            return
-        }
-    }
+    
     
     @IBAction func Language(_ sender: Any) {
         let chengelangu = UIAlertController(title: NSLocalizedString("The application will be restarted".localized, comment: ""), message: NSLocalizedString( "Choose your preferred language".localized,comment: ""), preferredStyle: .actionSheet)

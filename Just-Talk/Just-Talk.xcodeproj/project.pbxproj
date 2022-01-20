@@ -231,10 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				F6C48C9027748D3D0096EBD1 /* Model */,
-				F6C48C8F27748D1C0096EBD1 /* Helpers */,
-				F6C48C8D27748CB40096EBD1 /* Controllers */,
-				F6C48C8C27748C730096EBD1 /* Firebase */,
 				F68211C7276FA718001CBBC6 /* View */,
+				F6C48C8D27748CB40096EBD1 /* Controllers */,
 				F68211A5276F2830001CBBC6 /* Info.plist */,
 				F6F5220F278C0C3400847F0E /* Localizable.strings */,
 			);
@@ -310,6 +308,8 @@
 		F6C48C9027748D3D0096EBD1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F6C48C8F27748D1C0096EBD1 /* Helpers */,
+				F6C48C8C27748C730096EBD1 /* Firebase */,
 				F68211C927707AD8001CBBC6 /* User.swift */,
 				F658B7ED2779954300C8E3F1 /* ChatRoom.swift */,
 				F61A5BD3277C885400709C52 /* LocalMSG.swift */,

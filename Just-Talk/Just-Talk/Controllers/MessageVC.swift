@@ -286,7 +286,6 @@ configureMSGCollectionView()
     
 }
     //Record and Send function
-    
     @objc func recordAndSend() {
         
         switch longPressGesture.state {

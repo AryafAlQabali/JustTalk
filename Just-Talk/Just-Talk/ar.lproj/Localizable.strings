@@ -16,7 +16,7 @@
 
 
 "Available" = "متاح";
-"Busy" = "مشغول";
+"Busy!" = "مشغول!";
 "sleeping" = "نائم";
 "At School" = "في المدرسه";
 "At The Movies" = "";
@@ -30,7 +30,7 @@
 كتابة";
 
 "Camera" = "كاميرا";
-"Library" = "مكتبة الصور";
+"Library" = "الصور والفيديو ";
 "Show Location" = " الموقع";
 "Cancel" = "إنهاء";
 "chevron.left" = "chevron.right";
@@ -107,3 +107,5 @@
 "Choose your preferred language" = "اختر لغتك المفضلة";
 "Einglish" = "الانجليزيه";
 "Arabic" = "العربيه";
+
+//"Send" = "ارسال";

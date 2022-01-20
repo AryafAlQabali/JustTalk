@@ -52,10 +52,8 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     }
     
      //MARK:- Delegate function
-    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = locations.last!.coordinate
-        
         
         
     }

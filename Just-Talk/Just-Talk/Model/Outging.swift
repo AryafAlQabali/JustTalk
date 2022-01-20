@@ -69,11 +69,11 @@ class Outgoing {
     }
     
 }
-    func sendText(message: LocalMSG, text: String, memberIds: [String]) {
-        message.message = text
-        message.type = kTEXT
-        Outgoing.saveMessage(message: message, memberIds: memberIds)
-    }
+func sendText(message: LocalMSG, text: String, memberIds: [String]) {
+    message.message = text
+    message.type = kTEXT
+    Outgoing.saveMessage(message: message, memberIds: memberIds)
+}
 
 
 
@@ -86,18 +86,18 @@ func sendPhoto(message: LocalMSG, photo: UIImage, memberIds: [String]) {
     
     let fileName = Date().stringDate()
     let fileDirectory = "MediaMessages/Photo/" + "\(message.chatRoomId)" + "_\(fileName)" + ".jpg"
-
-
+    
+    
     FileStorage.saveFileLocally(fileData: photo.jpegData(compressionQuality: 0.6)! as NSData, fileName: fileName)
-
+    
     FileStorage.uploadeImage(photo, directory: fileDirectory) { (imageURL) in
-
+        
         if imageURL != nil {
             message.picturUrl = imageURL!
-        Outgoing.saveMessage(message: message, memberIds: memberIds)//
-            }
+            Outgoing.saveMessage(message: message, memberIds: memberIds)//
         }
     }
+}
 
 
 func sendVideo(message: LocalMSG, video: Video, memberIds:[String]) {

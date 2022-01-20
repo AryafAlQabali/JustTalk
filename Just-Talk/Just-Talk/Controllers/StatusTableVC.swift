@@ -9,7 +9,7 @@ import UIKit
 
 class StatusTableVC: UITableViewController {
 
-    let statuses = ["Available".localized , "Busy".localized, "sleeping".localized, "At School".localized, "At Work".localized, "In a Meeting".localized, "Can't Talk".localized]
+    let statuses = ["Available".localized , "Busy!".localized, "sleeping".localized, "At School".localized, "At Work".localized, "In a Meeting".localized, "Can't Talk".localized]
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()

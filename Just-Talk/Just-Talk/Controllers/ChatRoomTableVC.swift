@@ -11,7 +11,6 @@ class ChatRoomTableVC: UITableViewController {
 
     //MARK:- IBActions
     
-    
     @IBAction func comoseButPressed(_ sender: Any) {
         let usersView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "usersView")as!
         UsersTableVC
@@ -22,7 +21,6 @@ class ChatRoomTableVC: UITableViewController {
     //MARK:- Vars
     var allChatRooms:[ChatRoom] = []
     var filteredChatRooms:[ChatRoom] = []
-    
     let searchController = UISearchController(searchResultsController: nil)
     
     
@@ -48,6 +46,16 @@ class ChatRoomTableVC: UITableViewController {
         
         
     }
+    
+    //MARK:- UIScrollView Delegate Function
+    override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        if self.refreshControl!.isRefreshing{
+            self.downlaodChatRooms()
+            self.refreshControl!.endRefreshing()
+        }
+    }
+    
 
     // MARK: - Table view data source
 

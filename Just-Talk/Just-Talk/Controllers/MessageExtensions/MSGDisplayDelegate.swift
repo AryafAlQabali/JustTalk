@@ -15,7 +15,7 @@ extension MessageVC: MessagesDisplayDelegate {
     
     func textColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
         
-        return .label
+        return .purple
         
     }
     
