@@ -1,6 +1,9 @@
 # JustTalk
 
 
+![F53D2921-0CF8-4AE4-AB42-B3749DBFA020](https://user-images.githubusercontent.com/91872057/150083052-8da48c36-3e61-4d90-8499-d1c0016baaa6.JPEG)
+
+
 ## Description:
 
 An instant messaging application that can be used on iPhones, with which you can register and message other people who are registered in the program, and you can also send them photos. Through the program, you can also activate the dark mode and change the language.
@@ -24,9 +27,6 @@ An instant messaging application that can be used on iPhones, with which you can
 - Dark mode support
 - Supports changing the language
 
-## Components :
 
-- Login and Register page 
-- Settings page
-- Chat page
-- Users page
+## Define the scenes:
+https://www.figma.com/file/sG7C4vwD02WqehlLkBfgLm/Untitled?node-id=0%3A1
